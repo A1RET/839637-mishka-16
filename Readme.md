@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Роман Миронов](https://up.htmlacademy.ru/adaptive/16/user/839637).
-* Наставник: `Неизвестно`.
+* Наставник: [Владислав Балабанович](https://up.htmlacademy.ru/adaptive/16/user/6394).
 
 ---
 
