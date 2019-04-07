@@ -1,4 +1,6 @@
 @import "normalize.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav-toggle.scss";
 
 @mixin font($size: 15px, $line-height: 30px, $weight: 400) {
   font-family: "Open Sans", Arial, sans-serif;
