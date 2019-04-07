@@ -7,6 +7,12 @@
   line-height: $line-height;
 }
 
+@mixin list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 $seafoam-blue: #63d1bb;
 $greeny-blue: #56c3b2;
 
