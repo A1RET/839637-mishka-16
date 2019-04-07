@@ -26,13 +26,13 @@
   &--search::before {
     width: 18px;
     height: 18px;
-    background: url("../img/icon-search.svg") no-repeat center;
+    background: url("../img/decor/menu/icon-search.svg") no-repeat center;
   }
 
   &--cart::before {
     width: 21px;
     height: 18px;
-    background: url("../img/icon-cart.svg") no-repeat center;
+    background: url("../img/decor/menu/icon-cart.svg") no-repeat center;
   }
 }
 
@@ -50,13 +50,13 @@
 
   &-icon--search:hover::before,
   &-icon--search:focus::before {
-    background-image: url("../img/icon-search-hover.svg");
+    background-image: url("../img/decor/menu/icon-search-hover.svg");
     opacity: 1;
   }
 
   &-icon--cart:hover::before,
   &-icon--cart:focus::before {
-    background-image: url("../img/icon-cart-hover.svg");
+    background-image: url("../img/decor/menu/icon-cart-hover.svg");
     opacity: 1;
   }
 
