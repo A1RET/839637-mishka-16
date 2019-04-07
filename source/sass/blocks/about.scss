@@ -5,7 +5,7 @@
 
 .about-list {
   @include list;
-  @include font(17px, 20px, 800);
+  @include font(17px, 20px, bold);
 }
 
 .about-list__item {

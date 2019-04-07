@@ -1,6 +1,6 @@
 .site-list {
   @include list;
-  @include font(17px, 24px, 800);
+  @include font(17px, 24px, bold);
 }
 
 .site-list__item {

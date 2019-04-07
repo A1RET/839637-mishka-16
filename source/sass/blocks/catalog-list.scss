@@ -1,6 +1,6 @@
 .catalog-list {
   @include list;
-  @include font(19px, 24px, 800);
+  @include font(19px, 24px, bold);
 }
 
 .catalog-list__item {

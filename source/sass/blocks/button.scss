@@ -1,5 +1,5 @@
 .button {
-  @include font(17px, 20px, 800);
+  @include font(17px, 20px, bold);
   display: inline-block;
   width: 260px;
   padding: 16px 0;
