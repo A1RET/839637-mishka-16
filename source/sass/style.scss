@@ -13,9 +13,6 @@
   margin: 0;
 }
 
-$seafoam-blue: #63d1bb;
-$greeny-blue: #56c3b2;
-
 body {
   margin: 0;
   padding: 0;
@@ -56,3 +53,4 @@ a {
 @import "blocks/main-nav-toggle.scss";
 @import "blocks/site-list.scss";
 @import "blocks/promo.scss";
+@import "blocks/catalog-list.scss";
