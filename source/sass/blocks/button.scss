@@ -1,0 +1,8 @@
+.button {
+  @include font(17px, 20px, 800);
+  display: inline-block;
+  width: 260px;
+  padding: 16px 0;
+  text-align: center;
+  border: solid 2px #444444;
+}
