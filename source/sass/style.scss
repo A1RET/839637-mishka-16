@@ -51,6 +51,7 @@ a {
   clip: rect(0 0 0 0);
 }
 
+@import "blocks/title.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav-toggle.scss";
 @import "blocks/site-list.scss";
