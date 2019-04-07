@@ -1,4 +1,13 @@
 .page-footer {
   margin-top: 40px;
+  padding: 25px 0;
   background-color: #F1F1F1;
+}
+
+.page-footer__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 27px;
+  border-bottom: 1px solid #E6E6E6;
 }
