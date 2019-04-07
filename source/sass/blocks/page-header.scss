@@ -1,0 +1,15 @@
+.page-header {
+  display: flex;
+  flex-direction:column;
+}
+
+.page-header__top {
+  position: relative;
+}
+
+.page-header__logo-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
