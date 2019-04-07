@@ -1,1 +1,44 @@
+@mixin font($size: 15px, $line-height: 30px, $weight: 400) {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line-height;
+}
 
+$seafoam-blue: #63d1bb;
+$greeny-blue: #56c3b2;
+
+body {
+  margin: 0;
+  padding: 0;
+
+  @include font;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 320px;
+  margin: 0 auto;
+
+  background-color: #ffffff;
+  box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+}
