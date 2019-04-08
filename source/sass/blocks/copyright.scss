@@ -1,0 +1,27 @@
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 22px auto 0;
+}
+
+.copyright__text {
+  @include font(19px, 18px, bold);
+  margin-right: 30px;
+}
+
+.copyright__link {
+  display: inline-block;
+  width: 27px;
+  height: 34px;
+  background: url("../img/decor/logo/logo-htmlacademy.svg") no-repeat center;
+
+  &:hover,
+  &:focus {
+    background-image: url("../img/decor/logo/logo-htmlacademy-hover.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

@@ -1,0 +1,49 @@
+.about__title {
+  margin: 0;
+  margin-top: 32px;
+}
+
+.about-list {
+  @include list;
+  @include font(17px, 20px, bold);
+}
+
+.about-list__item {
+  position: relative;
+  margin-top: 30px;
+  padding-top: 55px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 55px;
+    height: 37px;
+    background: no-repeat center;
+  }
+
+  &--flower::before {
+    background-image: url("../img/decor/features/icon-feature-flower.svg");
+  }
+
+  &--money::before {
+    background-image: url("../img/decor/features/icon-feature-money.svg");
+  }
+
+  &--like::before {
+    background-image: url("../img/decor/features/icon-feature-heart.svg");
+  }
+
+  &--ball::before {
+    background-image: url("../img/decor/features/icon-feature-ball.svg");
+  }
+
+  &--rocket::before {
+    background-image: url("../img/decor/features/icon-feature-rocket.svg");
+  }
+
+  &--gift::before {
+    background-image: url("../img/decor/features/icon-feature-gift.svg");
+  }
+}

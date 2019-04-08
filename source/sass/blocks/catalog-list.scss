@@ -1,0 +1,62 @@
+.catalog-list {
+  @include list;
+  @include font(19px, 24px, bold);
+}
+
+.catalog-list__item {
+  &--interior {
+    background-color: #59d5bc;
+  }
+
+  &--toys {
+    background-color: #46c1ae;
+  }
+}
+
+.catalog-list__link {
+  position: relative;
+  width: 106px;
+  display: inline-block;
+  color: #ffffff;
+  padding: 28px 185px 28px 30px;
+
+  &--interior {
+    background-color: #63d1bb;
+  }
+
+  &--toys {
+    background-color: #56c3b2;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 62px;
+    top: 23px;
+    right: 27px;
+    opacity: 0.5;
+  }
+
+  &--interior::after {
+    background: url("../img/decor/icon-interior.svg") no-repeat center;
+  }
+
+  &--toys::after {
+    background: url("../img/decor/icon-toy.svg") no-repeat center;
+  }
+
+  &--interior:hover,
+  &--interior:focus {
+    background-color: #59d5bc;
+  }
+
+  &--toys:hover,
+  &--toys:focus {
+    background-color: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

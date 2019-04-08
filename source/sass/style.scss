@@ -1,0 +1,69 @@
+@import "normalize.scss";
+
+@mixin font($size: 15px, $line-height: 30px, $weight: 400) {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line-height;
+}
+
+@mixin list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  @include font;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 320px;
+  margin: 0 auto;
+
+  background-color: #ffffff;
+  box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
+}
+
+.container {
+  padding: 0 30px;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+}
+
+@import "blocks/title.scss";
+@import "blocks/button.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav-toggle.scss";
+@import "blocks/site-list.scss";
+@import "blocks/page-title.scss";
+@import "blocks/promo.scss";
+@import "blocks/catalog-list.scss";
+@import "blocks/good.scss";
+@import "blocks/about.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
+@import "blocks/goods.scss";
+@import "blocks/product.scss";
