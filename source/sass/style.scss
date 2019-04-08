@@ -7,18 +7,21 @@
 @import "blocks/visually-hidden.scss";
 @import "blocks/title.scss";
 @import "blocks/button.scss";
-/*------Header------*/
+/*------Header---------*/
 @import "blocks/page-header.scss";
 @import "blocks/main-nav-toggle.scss";
 @import "blocks/site-list.scss";
 @import "blocks/page-title.scss";
+/*------Footer----------*/
+@import "blocks/page-footer.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
+/*------index.html------*/
 @import "blocks/promo.scss";
 @import "blocks/catalog-list.scss";
 @import "blocks/good.scss";
 @import "blocks/good-description.scss";
 @import "blocks/about.scss";
-@import "blocks/page-footer.scss";
-@import "blocks/social.scss";
-@import "blocks/copyright.scss";
+/*------catalog.html-----*/
 @import "blocks/goods.scss";
 @import "blocks/product.scss";
