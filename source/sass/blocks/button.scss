@@ -7,4 +7,15 @@
   color: #000000;
   text-transform: uppercase;
   border: solid 2px #444444;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: #444444;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3%)
+  }
 }
