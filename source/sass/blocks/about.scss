@@ -12,6 +12,7 @@
   position: relative;
   margin-top: 30px;
   padding-top: 55px;
+
   &::before {
     content: "";
     position: absolute;
@@ -26,23 +27,23 @@
     background-image: url("../img/decor/features/icon-feature-flower.svg");
   }
 
-  &--money::before{
+  &--money::before {
     background-image: url("../img/decor/features/icon-feature-money.svg");
   }
 
-  &--like::before{
+  &--like::before {
     background-image: url("../img/decor/features/icon-feature-heart.svg");
   }
 
-  &--ball::before{
+  &--ball::before {
     background-image: url("../img/decor/features/icon-feature-ball.svg");
   }
 
-  &--rocket::before{
+  &--rocket::before {
     background-image: url("../img/decor/features/icon-feature-rocket.svg");
   }
 
-  &--gift::before{
+  &--gift::before {
     background-image: url("../img/decor/features/icon-feature-gift.svg");
   }
 }

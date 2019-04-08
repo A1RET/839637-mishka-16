@@ -1,7 +1,7 @@
 @import "normalize.scss";
 
 @mixin font($size: 15px, $line-height: 30px, $weight: 400) {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: $weight;
   font-size: $size;
   line-height: $line-height;
@@ -59,13 +59,11 @@ a {
 @import "blocks/site-list.scss";
 @import "blocks/page-title.scss";
 @import "blocks/promo.scss";
-
 @import "blocks/catalog-list.scss";
 @import "blocks/good.scss";
 @import "blocks/about.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
-
 @import "blocks/goods.scss";
 @import "blocks/product.scss";

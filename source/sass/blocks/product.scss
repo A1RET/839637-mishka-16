@@ -8,15 +8,16 @@
 
 .product__description {
   border: solid 1px #ececec;
-  padding:0 28px;
+  padding: 0 28px;
+
   &:hover,
   &:focus {
-    box-shadow: 0px 6px 10px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
   }
 }
 
 .product__image-link:hover ~ .product__description {
-  box-shadow: 0px 6px 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 .product__title {
@@ -39,7 +40,7 @@
 }
 
 .product__parameters {
-  @include font(13px)
+  @include font(13px);
   color: #444444;
   margin: 0;
   margin-top: 5px;
@@ -62,6 +63,7 @@
   height: 19px;
   background: url("../../img/decor/menu/icon-cart.svg") no-repeat center;
   opacity: 0.2;
+
   &:hover,
   &:focus {
     background-image: url("../../img/decor/menu/icon-cart-hover.svg");

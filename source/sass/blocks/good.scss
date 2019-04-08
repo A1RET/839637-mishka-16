@@ -1,6 +1,7 @@
 .good {
   position: relative;
   padding-bottom: 42px;
+
   &::after {
     content: "";
     width: 100%;
@@ -33,7 +34,7 @@
 .good-description__text {
   line-height: 24px;
   margin: 0;
-  margin-top: 24px
+  margin-top: 24px;
 }
 
 .good-description__table {
@@ -43,7 +44,7 @@
 }
 
 .good-description__parameter {
-  border-bottom: 1px solid #EDEDED;
+  border-bottom: 1px solid #ededed;
 }
 
 .good-description__image {
