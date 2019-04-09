@@ -79,3 +79,13 @@
 .form-item__label--name {
   margin-top: 24px;
 }
+
+.form-item__textarea {
+  line-height: 18px;
+  margin-top: 24px;
+  padding: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 142px;
+  border: 2px solid #000000;
+}
