@@ -9,6 +9,17 @@
 
 .form-email__text {
   width: 100%;
+
+  &:hover + .form-email__icon,
+  &:focus + .form-email__icon {
+    background-image: url("../img/decor/form/icon-mail-hover.svg");
+    opacity: 1;
+  }
+
+  &:active + .form-email__icon {
+    background-image: url("../img/decor/form/icon-mail-hover.svg");
+    opacity: 1;
+  }
 }
 
 .form-email__icon {

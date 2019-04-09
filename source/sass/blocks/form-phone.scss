@@ -10,6 +10,17 @@
 .form-phone__text {
   @include font(19px, 52px);
   width: 100%;
+
+  &:hover + .form-phone__icon,
+  &:focus + .form-phone__icon {
+    background-image: url("../img/decor/form/icon-phone-hover.svg");
+    opacity: 1;
+  }
+
+  &:active + .form-phone__icon {
+    background-image: url("../img/decor/form/icon-phone-hover.svg");
+    opacity: 1;
+  }
 }
 
 .form-phone__icon {
