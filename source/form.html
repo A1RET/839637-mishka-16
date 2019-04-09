@@ -88,7 +88,10 @@
 
               <fieldset class="form-item form-phone">
                 <legend class="form-item__title">Тел</legend>
-                <input class="form-item__text" type="tel" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+                <div class="form-phone__container">
+                  <input class="form-item__text form-phone__text" type="tel" name="tel" id="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+                  <label for="tel" class="form-phone__icon"></label>
+                </div>
               </fieldset>
 
               <fieldset class="form-item form-email">

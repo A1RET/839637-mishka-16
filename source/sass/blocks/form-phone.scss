@@ -1,0 +1,23 @@
+ .form-phone {
+  margin-top: 32px;
+  padding-top: 3px;
+}
+
+.form-phone__container {
+  position: relative;
+}
+
+.form-phone__text {
+  @include font(19px, 52px);
+  width: 100%;
+}
+
+.form-phone__icon {
+  position: absolute;
+  bottom: 17px;
+  right: 8px;
+  width: 25px;
+  height: 24px;
+  background: url("../img/decor/form/icon-phone.svg") no-repeat center;
+  opacity: 0.2;
+}
