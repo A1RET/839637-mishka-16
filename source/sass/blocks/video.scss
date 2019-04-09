@@ -3,13 +3,13 @@
   margin-left: -1px;
 }
 
-.video__play-button{
+.video__play-button {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 101px;
   height: 77px;
-  background:url("../../img/decor/icon-play.svg") no-repeat center;
+  background: url("../../img/decor/icon-play.svg") no-repeat center;
   border: none;
   transform: translate(-50%, -50%);
   cursor: pointer;
@@ -24,4 +24,3 @@
     opacity: 0.3;
   }
 }
-
