@@ -1,0 +1,9 @@
+.form-color__list {
+  @include list;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-color__list-item {
+  margin-top: 31px;
+}
