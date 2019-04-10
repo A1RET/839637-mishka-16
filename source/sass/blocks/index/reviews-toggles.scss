@@ -28,3 +28,18 @@
     opacity: 0.3;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .reviews-toggles {
+    position: absolute;
+    right: 52px;
+    bottom: 148px;
+  }
+
+  .reviews-toggles__toggle {
+    border: none;
+    width: 50px;
+    height: 26px;
+    margin-right: 37px;
+  }
+}

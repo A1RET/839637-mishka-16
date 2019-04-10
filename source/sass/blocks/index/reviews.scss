@@ -46,3 +46,38 @@
 .reviews__button {
   margin: 38px 0 45px;
 }
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 81px;
+    padding-bottom: 84px;
+    background: url("../../../img/decor/review@1x.jpg") no-repeat 0 0;
+
+    &::after {
+      height: 15px;
+    }
+  }
+
+  .reviews__title {
+    margin-top: 83px;
+  }
+
+  .reviews__item {
+    order: 1;
+    padding-bottom: 53px;
+  }
+
+  .reviews__author-name {
+    margin-top: 68px;
+  }
+
+  .reviews__button {
+    order: 0;
+    margin: 0;
+    align-self: flex-end;
+    width: 175px;
+  }
+}
