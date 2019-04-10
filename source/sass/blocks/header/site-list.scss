@@ -5,6 +5,7 @@
 
 .site-list__item {
   border-top: 1px solid #ededed;
+  background-color: #ffffff;
 
   &--last {
     border-bottom: 1px solid #ededed;
@@ -96,6 +97,7 @@
 
   .site-list__item--page {
     order: 1;
+    background-color: #f9f9f9;
   }
 
   .site-list__link {
