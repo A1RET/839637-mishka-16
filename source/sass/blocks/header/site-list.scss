@@ -4,7 +4,11 @@
 }
 
 .site-list__item {
-  box-shadow: 0 1px 0 0 #ededed, inset 0 1px 0 0 #ededed;
+  border-top: 1px solid #ededed;
+
+  &--last {
+    border-bottom: 1px solid #ededed;
+  }
 }
 
 .site-list__link {
@@ -48,8 +52,8 @@
   &::before {
     content: "";
     position: absolute;
-    top: 32px;
-    left: 30px;
+    top: 36px;
+    left: 32px;
     opacity: 0.2;
   }
 
@@ -63,5 +67,58 @@
     width: 21px;
     height: 18px;
     background: url("../img/decor/menu/icon-cart.svg") no-repeat center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .site-list__item {
+    display: inline-block;
+    order: 0;
+    border: none;
+    border-bottom: 1px solid #ededed;
+
+    &--page {
+      font-size: 15px;
+      margin-top: 20px;
+      margin-left: 52px;
+      border: none;
+    }
+
+    &:nth-child(2) {
+      margin-left: 37px;
+    }
+  }
+
+  .site-list__item--page {
+    order: 1;
+  }
+
+  .site-list__link {
+    width: auto;
+
+    &--page {
+      padding: 0;
+    }
+  }
+
+  .site-list__link-icon {
+    &--search {
+      margin-left: 370px;
+      padding: 44px 41px;
+      font-size: 0;
+      line-height: 0;
+      border-left: 1px solid #ededed;
+      border-right: 1px solid #ededed;
+    }
+
+    &--cart {
+      margin-right: 54px;
+      padding-left: 82px;
+    }
   }
 }
