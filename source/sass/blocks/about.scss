@@ -3,12 +3,12 @@
   margin-top: 32px;
 }
 
-.about-list {
+.about__list {
   @include list;
   @include font(17px, 20px, bold);
 }
 
-.about-list__item {
+.about__item {
   position: relative;
   margin-top: 30px;
   padding-top: 55px;

@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  @include font;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}

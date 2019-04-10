@@ -1,0 +1,120 @@
+.form-item {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  margin: 0;
+  margin-top: 34px;
+  padding: 0;
+  border-top: 1px solid #63d1bb;
+}
+
+.form-item__title {
+  @include font(17px, 16px, 700);
+  text-transform: uppercase;
+  color: #63d1bb;
+  padding-right: 20px;
+}
+
+.form-item__label {
+  @include font(17px, 18px, 700);
+  cursor: pointer;
+}
+
+.form-item__radio {
+  @include visually-hidden;
+
+  &:checked + .form-item__label--radio::before {
+    background-color: #63d1bb;
+    background-clip: content-box;
+  }
+}
+
+.form-item__label--radio {
+  position: relative;
+  padding-left: 62px;
+  margin-top: 24px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: -10px;
+    left: 0;
+    padding: 10px;
+    border: 2px solid #444444;
+    border-radius: 50%;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    border-color: #62d1ba;
+  }
+
+  &:active::before {
+    border-color: rgba(#444444, 0.3);
+  }
+}
+
+.form-item__checkbox {
+  @include visually-hidden;
+
+  &:checked ~ .form-item__label--checkbox::before {
+    background: url("../img/decor/form/icon-tick.svg") no-repeat center;
+    background-size: 22px 16px;
+  }
+}
+
+.form-item__label--checkbox {
+  position: relative;
+  padding-left: 64px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    top: -10px;
+    left: 0;
+    border: 2px solid #444444;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    border-color: #62d1ba;
+  }
+
+  &:active::before {
+    border-color: rgba(#444444, 0.3);
+  }
+}
+
+.form-item__text {
+  @include font(17px, 46px);
+  border: none;
+  border-bottom: 2px solid #000000;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    border-color: #62d1ba;
+  }
+
+  &:active {
+    border-color: #62d1ba;
+  }
+}
+
+.form-item__label--name {
+  margin-top: 24px;
+}
+
+.form-item__textarea {
+  line-height: 18px;
+  margin-top: 24px;
+  padding: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 142px;
+  border: 2px solid #000000;
+}

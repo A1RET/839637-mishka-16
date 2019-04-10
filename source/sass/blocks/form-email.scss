@@ -1,0 +1,33 @@
+.form-email {
+  margin-top: 32px;
+  padding-top: 9px;
+}
+
+.form-email__container {
+  position: relative;
+}
+
+.form-email__text {
+  width: 100%;
+
+  &:hover + .form-email__icon,
+  &:focus + .form-email__icon {
+    background-image: url("../img/decor/form/icon-mail-hover.svg");
+    opacity: 1;
+  }
+
+  &:active + .form-email__icon {
+    background-image: url("../img/decor/form/icon-mail-hover.svg");
+    opacity: 1;
+  }
+}
+
+.form-email__icon {
+  position: absolute;
+  bottom: 15px;
+  right: 4px;
+  width: 32px;
+  height: 21px;
+  background: url("../img/decor/form/icon-mail.svg") no-repeat center;
+  opacity: 0.2;
+}

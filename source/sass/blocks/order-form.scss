@@ -1,0 +1,11 @@
+.order-form__footnote {
+  @include font(14px, 16px);
+  margin: 0;
+  margin-top: 17px;
+}
+
+.order-form__button {
+  background: transparent;
+  width: 100%;
+  margin-top: 30px;
+}
