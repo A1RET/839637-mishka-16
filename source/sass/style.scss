@@ -9,35 +9,35 @@
 @import "blocks/title.scss";
 @import "blocks/button.scss";
 /*------Header---------*/
-@import "blocks/page-header.scss";
-@import "blocks/main-nav-toggle.scss";
-@import "blocks/site-list.scss";
-@import "blocks/page-title.scss";
+@import "blocks/header/page-header.scss";
+@import "blocks/header/main-nav-toggle.scss";
+@import "blocks/header/site-list.scss";
+@import "blocks/header/page-title.scss";
 /*------Footer----------*/
-@import "blocks/page-footer.scss";
-@import "blocks/social.scss";
-@import "blocks/copyright.scss";
+@import "blocks/footer/page-footer.scss";
+@import "blocks/footer/social.scss";
+@import "blocks/footer/copyright.scss";
 /*------index.html------*/
-@import "blocks/promo.scss";
-@import "blocks/catalog-list.scss";
-@import "blocks/good.scss";
-@import "blocks/good-description.scss";
-@import "blocks/about.scss";
-@import "blocks/reviews.scss";
-@import "blocks/reviews-toggles.scss";
-@import "blocks/contacts.scss";
+@import "blocks/index/promo.scss";
+@import "blocks/index/catalog-list.scss";
+@import "blocks/index/good.scss";
+@import "blocks/index/good-description.scss";
+@import "blocks/index/about.scss";
+@import "blocks/index/reviews.scss";
+@import "blocks/index/reviews-toggles.scss";
+@import "blocks/index/contacts.scss";
 /*------catalog.html-----*/
-@import "blocks/goods.scss";
-@import "blocks/product.scss";
-@import "blocks/production.scss";
-@import "blocks/video.scss";
+@import "blocks/catalog/goods.scss";
+@import "blocks/catalog/product.scss";
+@import "blocks/catalog/production.scss";
+@import "blocks/catalog/video.scss";
 /*-------form.html-------*/
-@import "blocks/order.scss";
-@import "blocks/order-form.scss";
-@import "blocks/form-item.scss";
-@import "blocks/form-type.scss";
-@import "blocks/form-color.scss";
-@import "blocks/form-name.scss";
-@import "blocks/form-phone.scss";
-@import "blocks/form-email.scss";
-@import "blocks/form-add.scss";
+@import "blocks/form/order.scss";
+@import "blocks/form/order-form.scss";
+@import "blocks/form/form-item.scss";
+@import "blocks/form/form-type.scss";
+@import "blocks/form/form-color.scss";
+@import "blocks/form/form-name.scss";
+@import "blocks/form/form-phone.scss";
+@import "blocks/form/form-email.scss";
+@import "blocks/form/form-add.scss";
