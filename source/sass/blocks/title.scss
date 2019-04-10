@@ -8,6 +8,6 @@
 
 @media (min-width: $tablet-width) {
   .title {
-    @include font(53px, 57px, bold);
+    @include font(43px, 50px, bold);
   }
 }
