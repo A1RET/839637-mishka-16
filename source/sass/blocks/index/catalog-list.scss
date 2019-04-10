@@ -60,3 +60,19 @@
     opacity: 0.3;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .catalog-list {
+    @include font(20px, 30px, bold);
+    display: flex;
+    padding: 0 52px;
+  }
+
+  .catalog-list__item {
+    flex-grow: 1;
+  }
+
+  .catalog-list__link {
+    padding: 30px 192px 29px 35px;
+  }
+}
