@@ -28,3 +28,39 @@
 .good-description__button {
   margin-top: 25px;
 }
+
+@media (min-width: $tablet-width) {
+  .good-description {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 404px;
+    margin-top: 45px;
+  }
+
+  .good-description__text {
+    width: 292px;
+    margin: 0;
+  }
+
+  .good-description__table {
+    width: 292px;
+    margin-top: 46px;
+  }
+
+  .good-description__image {
+    margin: 0;
+    margin-left: auto;
+    order: 1;
+  }
+
+  .good-description__price {
+    width: 290px;
+    margin-top: 58px;
+  }
+
+  .good-description__button {
+    width: 292px;
+    margin-top: 32px;
+  }
+}

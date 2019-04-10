@@ -30,3 +30,29 @@
   margin: 0;
   margin-top: 5px;
 }
+
+@media (min-width: $tablet-width) {
+  .good {
+    padding-bottom: 68px;
+
+    &::after {
+      height: 15px;
+    }
+  }
+
+  .good__header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+
+  .good__title {
+    margin: 0;
+  }
+
+  .good__subtitle {
+    width: 70px;
+    text-align: center;
+  }
+}
