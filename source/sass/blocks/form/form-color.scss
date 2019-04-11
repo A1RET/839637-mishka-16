@@ -16,6 +16,7 @@
 
 @media (min-width: $tablet-width) {
   .form-color__list {
+    flex-direction: row;
     flex-wrap: wrap;
     height: 204px;
     margin-top: 0;
@@ -23,13 +24,9 @@
 
   .form-color__list-item {
     margin-top: 52px;
-    margin-right: 65px;
+    flex-basis: 50%;
 
-    &--first {
-      margin-top: 10px;
-    }
-
-    &:nth-child(4n) {
+    &--top {
       margin-top: 10px;
     }
   }
