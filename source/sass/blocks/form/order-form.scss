@@ -9,3 +9,26 @@
   width: 100%;
   margin-top: 30px;
 }
+
+@media (min-width: $tablet-width) {
+  .order-form__container {
+    background-color: #f1f1f1;
+  }
+
+  .order-form__footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3px;
+  }
+
+  .order-form__footnote {
+    @include font(17px, 30px, 400);
+  }
+
+  .order-form__button {
+    width: 230px;
+    margin-top: 0;
+  }
+}

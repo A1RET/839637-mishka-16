@@ -1,6 +1,5 @@
 .form-phone {
   margin-top: 23px;
-  /*padding-top: 3px;*/
 }
 
 .form-phone__container {
@@ -32,4 +31,21 @@
   height: 24px;
   background: url("../img/decor/form/icon-phone.svg") no-repeat center;
   opacity: 0.2;
+}
+
+
+@media (min-width: $tablet-width) {
+  .form-phone {
+    margin-top: 0;
+    padding-bottom: 12px;
+    }
+
+  .form-phone__text {
+    background-color: transparent;
+    width: calc(100% - 32px);
+  }
+
+  .form-phone__icon {
+    right: 26px;
+  }
 }

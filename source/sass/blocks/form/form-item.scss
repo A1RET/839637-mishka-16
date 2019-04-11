@@ -118,3 +118,44 @@
   min-height: 142px;
   border: 2px solid #000000;
 }
+
+@media (min-width: $tablet-width) {
+  .form-item {
+    position: relative;
+    border: none;
+    padding: 50px 0 50px 165px;
+    margin-top: 0;
+  }
+
+  .form-item__title {
+    position: absolute;
+    top: 69px;
+    left: 0px;
+  }
+
+  .form-item__label {
+    @include font(19px, 18px, 700);
+  }
+
+  .form-item__label--radio {
+    margin-top: 57px;
+
+    &:first-of-type {
+      margin-top: 18px;
+    }
+  }
+
+  .form-item__label--name {
+    margin-top: 15px;
+    margin-right: 25px;
+  }
+
+  .form-item__text {
+    padding: 0 16px;
+    width: 100%;
+  }
+
+  .form-item__textarea {
+    padding: 17px;
+  }
+}

@@ -11,3 +11,22 @@
 .form-name__first {
   margin-top: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .form-name {
+    margin-top: 0;
+  }
+
+  .form-name__item {
+    flex-direction: row;
+    margin-top: 24px;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+
+  .form-name__first {
+    margin-top: 15px;
+  }
+}

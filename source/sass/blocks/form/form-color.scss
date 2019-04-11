@@ -5,6 +5,32 @@
   margin-top: 21px;
 }
 
-.form-color__list-item:not(:first-child) {
+.form-color__list-item {
   margin-top: 31px;
+
+  &--first {
+    margin-top: 0;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .form-color__list {
+    flex-wrap: wrap;
+    height: 204px;
+    margin-top: 0;
+  }
+
+  .form-color__list-item {
+    margin-top: 52px;
+    margin-right: 65px;
+
+    &--first {
+      margin-top: 10px;
+    }
+
+    &:nth-child(4n) {
+      margin-top: 10px;
+    }
+  }
 }
