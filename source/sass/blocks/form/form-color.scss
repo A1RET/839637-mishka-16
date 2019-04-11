@@ -2,8 +2,9 @@
   @include list;
   display: flex;
   flex-direction: column;
+  margin-top: 21px;
 }
 
-.form-color__list-item {
+.form-color__list-item:not(:first-child) {
   margin-top: 31px;
 }

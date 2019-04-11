@@ -1,9 +1,13 @@
 .form-name {
-  padding-top: 6px;
+  margin-top: 26px;
 }
 
 .form-name__item {
   display: flex;
   flex-direction: column;
   margin: 0;
+}
+
+.form-name__first {
+  margin-top: 20px;
 }

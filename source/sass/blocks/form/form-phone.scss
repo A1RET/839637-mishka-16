@@ -1,6 +1,6 @@
 .form-phone {
-  margin-top: 32px;
-  padding-top: 3px;
+  margin-top: 23px;
+  /*padding-top: 3px;*/
 }
 
 .form-phone__container {
@@ -10,6 +10,7 @@
 .form-phone__text {
   @include font(19px, 52px);
   width: 100%;
+  margin-top: -7px;
 
   &:hover + .form-phone__icon,
   &:focus + .form-phone__icon {
