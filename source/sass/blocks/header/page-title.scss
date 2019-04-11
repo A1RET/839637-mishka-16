@@ -1,9 +1,30 @@
 .page-title {
   background-color: #f1f1f1;
+  width: 100%;
 }
 
 .page-title__title {
   margin-top: 75px;
   margin-bottom: 79px;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .page-title {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: -12px;
+      left: 0;
+      width: 100%;
+      height: 24px;
+      background: url("../img/decor/bg-zigzag-fill.svg") no-repeat center;
+      background-size: contain;
+    }
+  }
+
+  .page-title__title {
+    margin-top: 60px;
+  }
 }
