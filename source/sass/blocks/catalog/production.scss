@@ -36,3 +36,33 @@
   width: 192px;
   margin: 24px auto 33px;
 }
+
+@media (min-width: $tablet-width) {
+  .production {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .production__title {
+    order: 1;
+    font-size: 20px;
+    padding: 41px 0 0 99px;
+
+    &::before {
+      top: 40px;
+      left: 42px;
+    }
+  }
+
+  .production__text {
+    order: 1;
+    font-size: 15px;
+    margin-top: 32px;
+  }
+
+  .production__button {
+    order: 1;
+    width: calc(100% - 84px);
+    margin: 33px auto 46px;
+  }
+}
