@@ -35,3 +35,11 @@
     margin: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-header__top {
+    top: 9px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
