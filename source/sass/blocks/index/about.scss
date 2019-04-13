@@ -71,11 +71,11 @@
 @media (min-width: $desktop-width) {
   .about__title {
     margin-top: 68px;
-    margin-left: 175px;
+    margin-left: $index-left-margin;
   }
 
   .about__list {
-    margin-left: 175px;
+    margin-left: $index-left-margin;
     margin-right: 230px;
     align-items: flex-start;
   }

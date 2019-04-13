@@ -106,7 +106,7 @@
   .contacts__title {
     @include font(53px, 57px, 700);
     margin-top: 150px;
-    margin-left: 175px;
+    margin-left: $index-left-margin;
 
      &::after {
       left: -111px;
@@ -115,7 +115,7 @@
 
   .contacts__info {
     display: table;
-    margin-left: 175px;
+    margin-left: $index-left-margin;
     margin-top: 55px;
   }
 
@@ -141,6 +141,6 @@
   }
 
   .contacts__button {
-    margin: 78px 175px 0;
+    margin: 78px $index-left-margin 0;
   }
 }
