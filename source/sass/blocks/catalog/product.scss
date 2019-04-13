@@ -92,3 +92,23 @@
     font-size: 15px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .product {
+    flex-direction: column;
+    width: 316px;
+  }
+
+  .product__description {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product__parameters {
+    margin-bottom: 12px;
+  }
+
+  .product__price {
+    margin-top: auto;
+  }
+}

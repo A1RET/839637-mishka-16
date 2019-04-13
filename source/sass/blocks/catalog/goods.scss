@@ -1,3 +1,11 @@
 .goods__list {
   @include list;
 }
+
+@media (min-width: $desktop-width) {
+  .goods__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 98px;
+  }
+}
