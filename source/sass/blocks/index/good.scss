@@ -1,4 +1,6 @@
 .good {
+  display: flex;
+  flex-direction: column;
   position: relative;
   padding-bottom: 42px;
 
@@ -34,6 +36,7 @@
 @media (min-width: $tablet-width) {
   .good {
     padding-bottom: 68px;
+    margin-top: 40px;
 
     &::after {
       height: 15px;
@@ -44,10 +47,10 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    margin-top: 40px;
   }
 
   .good__title {
+    z-index: 1;
     margin: 0;
   }
 
@@ -60,6 +63,7 @@
 @media (min-width: $desktop-width) {
   .good {
     padding-bottom: 96px;
+    margin-top: 71px;
 
     &::after {
       left:52px;
@@ -72,7 +76,7 @@
     position: relative;
     flex-direction: row;
     margin-left: 47px;
-    margin-top: 132px;
+    margin-top: 61px;
     justify-content: flex-start;
   }
 

@@ -31,10 +31,10 @@
 
 @media (min-width: $tablet-width) {
   .good-description {
+    position: relative;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    max-height: 699px;
     margin-top: 45px;
   }
 
@@ -49,9 +49,10 @@
   }
 
   .good-description__image {
+    position: absolute;
+    top: 0;
+    right: 0;
     margin: 0;
-    margin-left: auto;
-    order: 1;
   }
 
   .good-description__price {
@@ -67,6 +68,7 @@
 
 @media (min-width: $desktop-width) {
   .good-description {
+    position: static;
     margin-top: 54px;
   }
 
@@ -76,5 +78,9 @@
 
   .good-description__price {
     margin-top: 109px;
+  }
+
+  .good-description__image {
+    right: 52px;
   }
 }
