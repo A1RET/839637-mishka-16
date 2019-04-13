@@ -1,0 +1,41 @@
+.menu-toggle {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  padding: 40px 31px;
+  cursor: pointer;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.menu-toggle--closed {
+  width: 20px;
+  height: 14px;
+  background: transparent url("../img/decor/menu/icon-menu-open.svg") no-repeat center;
+}
+
+.menu-toggle--opened {
+  width: 21px;
+  height: 20px;
+  background: transparent url("../img/decor/menu/icon-menu-close.svg") no-repeat center;
+}
+
+.menu-toggle--no-js {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .menu-toggle {
+    display: none;
+  }
+}
