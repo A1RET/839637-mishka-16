@@ -58,11 +58,25 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 400px;
+    height: 462px;
     align-items: stretch;
   }
 
   .about__item {
     width: 295px;
+    margin-top: 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about__title {
+    margin-top: 68px;
+    margin-left: 175px;
+  }
+
+  .about__list {
+    margin-left: 175px;
+    margin-right: 230px;
+    align-items: flex-start;
   }
 }
