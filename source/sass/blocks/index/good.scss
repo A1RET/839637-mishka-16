@@ -9,7 +9,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    background: url("../img/decor/bg-zigzag-line.svg");
+    background: url("../img/decor/bg-zigzag-line.svg") repeat-x;
     background-size: contain;
   }
 }
@@ -60,6 +60,12 @@
 @media (min-width: $desktop-width) {
   .good {
     padding-bottom: 96px;
+
+    &::after {
+      left:52px;
+      width: calc(100% - 104px);
+      height: 23px;
+    }
   }
 
   .good__header {
