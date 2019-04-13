@@ -56,3 +56,25 @@
     text-align: center;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .good {
+    padding-bottom: 96px;
+  }
+
+  .good__header {
+    position: relative;
+    flex-direction: row;
+    margin-left: 47px;
+    margin-top: 132px;
+    justify-content: flex-start;
+  }
+
+  .good__subtitle {
+    margin-right: 54px;
+  }
+
+  .good-description {
+    margin-left: 175px;
+  }
+}

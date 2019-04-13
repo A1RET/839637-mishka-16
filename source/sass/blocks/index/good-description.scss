@@ -64,3 +64,17 @@
     margin-top: 32px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .good-description {
+    margin-top: 54px;
+  }
+
+  .good-description__table {
+    margin-top: 56px;
+  }
+
+  .good-description__price {
+    margin-top: 109px;
+  }
+}
