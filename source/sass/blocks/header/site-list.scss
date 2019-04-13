@@ -33,7 +33,7 @@
   }
 
   &--bottom {
-    color: #000000
+    color: #000000;
   }
 
   &-icon--search:hover::before,
@@ -165,9 +165,9 @@
   }
 
 
-.site-list__link--page {
-  padding: 30px 35px;
-}
+  .site-list__link--page {
+    padding: 30px 35px;
+  }
 
   .site-list__link-icon {
     &--search {

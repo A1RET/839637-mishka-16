@@ -11,6 +11,7 @@
 @media (min-width: $tablet-width) {
   .page-title {
     position: relative;
+
     &::after {
       position: absolute;
       content: "";
