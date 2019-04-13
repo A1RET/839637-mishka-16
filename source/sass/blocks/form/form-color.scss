@@ -8,7 +8,7 @@
 .form-color__list-item {
   margin-top: 31px;
 
-  &--first {
+  &--top {
     margin-top: 0;
   }
 }
@@ -18,16 +18,35 @@
   .form-color__list {
     flex-direction: row;
     flex-wrap: wrap;
-    height: 204px;
+    align-items: stretch;
+    min-height: 204px;
     margin-top: 0;
   }
 
   .form-color__list-item {
-    margin-top: 52px;
+    margin-top: 50px;
     flex-basis: 50%;
 
-    &--top {
-      margin-top: 10px;
+    &:nth-child(1) {
+      margin-top: 14px;
+    }
+
+    &:nth-child(2) {
+      margin-top: 14px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-color__list {
+    min-height: 128px;
+  }
+
+  .form-color__list-item {
+    flex-basis: 30%;
+
+    &:nth-child(3) {
+      margin-top: 14px;
     }
   }
 }

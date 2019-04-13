@@ -32,3 +32,13 @@
     margin-top: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .order-form__footnote{
+    margin-right: $form-desktop-margin;
+  }
+
+  .order-form__button {
+    margin-left: $form-desktop-margin;
+  }
+}

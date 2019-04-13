@@ -123,7 +123,7 @@
   .form-item {
     position: relative;
     border: none;
-    padding: 50px 0 50px 165px;
+    padding: 50px 0 50px $form-tablet-margin;
     margin-top: 0;
   }
 
@@ -139,9 +139,27 @@
 
   .form-item__label--radio {
     margin-top: 57px;
+    padding-left: 80px;
 
     &:first-of-type {
       margin-top: 18px;
+    }
+
+    &::before {
+      top: -15px;
+      width: 22px;
+      height: 22px;
+      padding: 13px;
+    }
+  }
+
+  .form-item__label--checkbox {
+    padding-left: 80px;
+
+    &::before {
+      width: 50px;
+      height: 50px;
+      top: -15px;
     }
   }
 
@@ -157,5 +175,12 @@
 
   .form-item__textarea {
     padding: 17px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-item {
+    padding-left: $form-desktop-margin;
+    padding-right: $form-desktop-margin;
   }
 }

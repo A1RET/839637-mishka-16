@@ -10,3 +10,15 @@
     @include font(17px, 30px);
   }
 }
+
+@media (min-width: $desktop-width) {
+  .order {
+    margin-bottom: 50px;
+  }
+
+  .order__description {
+    margin-top: 88px;
+    margin-right: $form-desktop-margin;
+    margin-left: $form-desktop-margin;
+  }
+}
