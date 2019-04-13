@@ -91,6 +91,7 @@
 
 .form-item__text {
   @include font(17px, 46px);
+  height: 46px;
   border: none;
   border-bottom: 2px solid #000000;
   outline: none;
