@@ -32,7 +32,7 @@
 @media (min-width: $tablet-width) {
   .reviews-toggles {
     position: absolute;
-    right: 52px;
+    right: $container-padding;
     bottom: 148px;
   }
 

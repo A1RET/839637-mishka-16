@@ -95,7 +95,7 @@
     &--bottom {
       font-size: 15px;
       margin-top: 20px;
-      margin-left: 52px;
+      margin-left: $container-padding;
       border: none;
     }
 
@@ -128,7 +128,7 @@
     }
 
     &--cart {
-      margin-right: 52px;
+      margin-right: $container-padding;
       padding-left: 82px;
     }
   }

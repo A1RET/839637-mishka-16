@@ -86,11 +86,11 @@
   .reviews {
     margin-top: 88px;
     padding-bottom: 90px;
-    background-position: 52px 0;
+    background-position: $container-padding 0;
 
     &::after {
       height: 23px;
-      left: 52px;
+      left: $container-padding;
       width: calc(100% - 104px)
     }
   }

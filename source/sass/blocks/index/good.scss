@@ -66,7 +66,7 @@
     margin-top: 71px;
 
     &::after {
-      left:52px;
+      left: $container-padding;
       width: calc(100% - 104px);
       height: 23px;
     }
