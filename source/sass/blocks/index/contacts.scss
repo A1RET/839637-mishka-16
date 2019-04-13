@@ -97,9 +97,9 @@
 @media (min-width: $desktop-width) {
   .contacts {
     display: flex;
+    position: relative;
     flex-direction: column;
     flex-wrap: wrap;
-    max-height: 600px;
     margin-bottom: 105px;
   }
 
@@ -130,8 +130,9 @@
   }
 
   .contacts__map-wrapper {
-    order: 1;
-    margin-left: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
     margin-right: 52px;
   }
 
@@ -140,6 +141,6 @@
   }
 
   .contacts__button {
-    margin: 78px auto 0;
+    margin: 78px 175px 0;
   }
 }
