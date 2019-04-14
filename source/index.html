@@ -7,8 +7,8 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    <div class="wrapper">
-      <header class="page-header">
+    <div class="wrapper wrapper--header-main">
+      <header class="page-header container container--no-padding">
         <div class="page-header__top">
           <img class="page-header__logo-image" src="img/content/logo-mobile.svg" width="86" height="35" alt="Логотип 'Мишки'">
           <button class="menu-toggle menu-toggle--no-js"><span class="visually-hidden">Открыть меню</span></button>
@@ -46,52 +46,49 @@
           </ul>
         </div>
       </header>
+    </div>
 
-
+    <div class="wrapper">
       <main class="page-content">
         <h1 class="visually-hidden">Мишка. Интернет-магазин игрушек ручной работы</h1>
 
-        <section class="good">
-          <div class="container">
-            <div class="good__header">
-              <h2 class="good__subtitle">Товар недели</h2>
-              <h3 class="good__title title">Вязаные корзинки</h3>
-            </div>
-            <div class="good-description">
-              <p class="good-description__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-              <table class="good-description__table">
-                <tr>
-                  <td class="good-description__parameter">Цвет:</td>
-                  <td class="good-description__parameter">«Тиффани»/серый</td>
-                </tr>
-                <tr>
-                  <td class="good-description__parameter">Диаметр:</td>
-                  <td class="good-description__parameter">25 см</td>
-                </tr>
-                <tr>
-                  <td class="good-description__parameter">Высота:</td>
-                  <td class="good-description__parameter">15 см</td>
-                </tr>
-              </table>
-              <img class="good-description__image" src="img/content/products/triple-set-mobile@1x.jpg" width="260" height="315" alt="Изображение товара 'Вязаные корзинки'">
-              <p class="good-description__price">Цена: 990 руб.</p>
-              <a class="good-description__button button">Заказать</a>
-            </div>
+        <section class="good container">
+          <div class="good__header">
+            <h2 class="good__subtitle">Товар недели</h2>
+            <h3 class="good__title title">Вязаные корзинки</h3>
+          </div>
+          <div class="good-description">
+            <p class="good-description__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+            <table class="good-description__table">
+              <tr>
+                <td class="good-description__parameter">Цвет:</td>
+                <td class="good-description__parameter">«Тиффани»/серый</td>
+              </tr>
+              <tr>
+                <td class="good-description__parameter">Диаметр:</td>
+                <td class="good-description__parameter">25 см</td>
+              </tr>
+              <tr>
+                <td class="good-description__parameter">Высота:</td>
+                <td class="good-description__parameter">15 см</td>
+              </tr>
+            </table>
+            <img class="good-description__image" src="img/content/products/triple-set-mobile@1x.jpg" width="260" height="315" alt="Изображение товара 'Вязаные корзинки'">
+            <p class="good-description__price">Цена: 990 руб.</p>
+            <a class="good-description__button button">Заказать</a>
           </div>
         </section>
 
-        <section class="about">
-          <div class="container">
-            <h2 class="about__title title">Коротко о нас:</h2>
-            <ul class="about__list">
-              <li class="about__item about__item--flower">Экологически чистые&nbsp;материалы</li>
-              <li class="about__item about__item--money">Скандинавский стиль по&nbsp;российской цене</li>
-              <li class="about__item about__item--like">Увеличивает лайки на&nbsp;фотографиях</li>
-              <li class="about__item about__item--ball">Связано вручную с любовью и умилением</li>
-              <li class="about__item about__item--rocket">Поддержка отечественного производителя</li>
-              <li class="about__item about__item--gift">Поставляется в подарочной упаковке</li>
-            </ul>
-          </div>
+        <section class="about container">
+          <h2 class="about__title title">Коротко о нас:</h2>
+          <ul class="about__list">
+            <li class="about__item about__item--flower">Экологически чистые&nbsp;материалы</li>
+            <li class="about__item about__item--money">Скандинавский стиль по&nbsp;российской цене</li>
+            <li class="about__item about__item--like">Увеличивает лайки на&nbsp;фотография</li>
+            <li class="about__item about__item--ball">Связано вручную с любовью и умиление</li>
+            <li class="about__item about__item--rocket">Поддержка отечественного производителя</li>
+            <li class="about__item about__item--gift">Поставляется в подарочной упаковке</li>
+          </ul>
         </section>
 
         <section class="reviews container">
@@ -111,30 +108,34 @@
         </section>
 
         <section class="contacts">
-          <div class="container">
-            <h2 class="contacts__title title">Контакты</h2>
-            <div class="contacts__info">
-              <p  class="contacts__item">
-                <span class="contacts__text">e-mail:</span>
-                <span class="contacts__text"><a class="contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></span>
-              </p>
-              <p class="contacts__item">
-                <span class="contacts__text">адрес:</span>
-                <span class="contacts__text">г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</span>
-              </p>
+          <div class="contacts__container">
+            <div class="container">
+              <h2 class="contacts__title title">Контакты</h2>
+              <div class="contacts__info">
+                <p  class="contacts__item">
+                  <span class="contacts__text">e-mail:</span>
+                  <span class="contacts__text"><a class="contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></span>
+                </p>
+                <p class="contacts__item">
+                  <span class="contacts__text">адрес:</span>
+                  <span class="contacts__text">г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</span>
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="contacts__map-wrapper">
-            <img class="contacts__map-image" src="img/content/map-mobile@1x.jpg" width="320" height="457" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
-          </div>
-          <div class="container">
-            <a class="contacts__button button" href="">Напишите нам</a>
+            <div class="contacts__map-wrapper">
+              <img class="contacts__map-image" src="img/content/map-mobile@1x.jpg" width="320" height="457" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+            </div>
+            <div class="container">
+              <a class="contacts__button button" href="">Напишите нам</a>
+            </div>
           </div>
         </section>
       </main>
+    </div>
 
-      <footer class="page-footer">
-        <div class="page-footer__container container">
+    <div class="wrapper wrapper--grey">
+      <footer class="page-footer container">
+        <div class="page-footer__container">
           <img class="page-footer__logo-image" src="img/content/logo-footer.svg" width="102" height="34" alt="Логотип 'Мишки'">
 
           <div class="page-footer__social social">

@@ -1,20 +1,24 @@
 .wrapper {
-  width: 320px;
-  margin: 0 auto;
-
+  width: 100%;
   background-color: #ffffff;
-  box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
+
+  &--grey {
+    background-color: #f1f1f1;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .wrapper {
-    width: $tablet-width;
-  }
-}
+    &--header-main {
+      background-image: linear-gradient(#ffffff 88px, #ededed 88px, #ededed 89px, #f9f9f9 89px);
+    }
 
+    &--header-inner {
+      background-image: linear-gradient(#ffffff 88px, #ededed 88px, #ededed 89px, #f1f1f1 89px);
+    }
 
-@media (min-width: $desktop-width) {
-  .wrapper {
-    width: $desktop-width;
+    &--form {
+      background-color: #f1f1f1;
+    }
   }
 }

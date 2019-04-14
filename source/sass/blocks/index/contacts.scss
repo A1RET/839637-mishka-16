@@ -1,3 +1,8 @@
+.contacts__container {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .contacts__title {
   @include font(18px, 30px, 700);
   margin: 0;
@@ -48,6 +53,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .contacts__container {
+    width: $tablet-width;
+  }
+
   .contacts__title {
     @include font(43px, 50px, 700);
     position: relative;
@@ -95,7 +104,8 @@
 }
 
 @media (min-width: $desktop-width) {
-  .contacts {
+  .contacts__container {
+    width: $desktop-width;
     display: flex;
     position: relative;
     flex-direction: column;
