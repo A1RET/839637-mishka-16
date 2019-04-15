@@ -7,49 +7,70 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    <div class="wrapper">
-      <header class="page-header">
+    <div class="wrapper wrapper--header-inner">
+      <header class="page-header page-header--inner container container--no-padding">
         <div class="page-header__top">
           <a class="page-header__logo" href="index.html">
             <img class="page-header__logo-image" src="img/content/logo-mobile.svg" width="86" height="35" alt="Логотип 'Мишки'">
           </a>
-          <button class="main-nav-toggle"><span class="visually-hidden">Открыть меню</span></button>
+          <button class="menu-toggle menu-toggle--no-js"><span class="visually-hidden">Открыть меню</span></button>
         </div>
 
         <nav class="main-nav">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог товаров</a></li>
-            <li class="site-list__item"><a class="site-list__link" href="form.html">Вязание на заказ</a></li>
-            <li class="site-list__item"><a class="site-list__link site-list__link-icon site-list__link-icon--search" href="">Поиск по сайту</a></li>
-            <li class="site-list__item"><a class="site-list__link site-list__link-icon site-list__link-icon--cart" href="">Корзина: пока пуста</a></li>
+            <li class="site-list__item site-list__item--page site-list__item--first">
+              <a class="site-list__link site-list__link--page" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="site-list__item site-list__item--page">
+              <a class="site-list__link site-list__link--page" href="form.html">Вязание на заказ</a>
+            </li>
+            <li class="site-list__item site-list__item--icon">
+              <a class="site-list__link site-list__link-icon site-list__link-icon--search" href="">Поиск по сайту</a>
+            </li>
+            <li class="site-list__item  site-list__item--icon site-list__item--last">
+              <a class="site-list__link site-list__link-icon site-list__link-icon--cart" href="">Корзина: пока пуста</a>
+            </li>
+            <li class="site-list__item--bottom">
+              <a class=" site-list__link--bottom" href="form.html">Новые поступления</a>
+            </li>
+            <li class="site-list__item--bottom">
+              <a class=" site-list__link--bottom" href="form.html">Распродажа</a>
+            </li>
           </ul>
+          <p class="main-nav__delivery">Бесплатная доставка по России</p>
         </nav>
 
         <div class="page-title">
           <h1 class="page-title__title title title--header">Вязание на заказ</h1>
         </div>
       </header>
+    </div>
 
-      <main class="page-content">
+    <main class="page-content">
+      <section class="order">
         <div class="container">
-          <section class="order">
-            <h2 class="visually-hidden"></h2>
-            <p class="order__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+          <h2 class="visually-hidden">Форма заказа</h2>
+          <p class="order__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        </div>
 
-            <form class="order-form" action="https://echo.htmlacademy.ru" method="post">
+        <form class="order-form" action="https://echo.htmlacademy.ru" method="post">
 
-              <fieldset class="form-item form-type">
-                <legend class="form-item__title">Тип</legend>
-                <input class="form-item__radio" type="radio" name="type" id="interior" value="interior" checked>
-                <label class="form-item__label form-item__label--radio" for="interior">Аксессуар для интерьера</label>
-                <input class="form-item__radio" type="radio" name="type" id="toy" value="toy">
-                <label class="form-item__label form-item__label--radio" for="toy">Детская игрушка</label>
-              </fieldset>
+          <div class="container">
+            <fieldset class="form-item form-type">
+              <legend class="form-item__title">Тип</legend>
+              <input class="form-item__radio" type="radio" name="type" id="interior" value="interior" checked>
+              <label class="form-item__label form-item__label--radio" for="interior">Аксессуар для интерьера</label>
+              <input class="form-item__radio" type="radio" name="type" id="toy" value="toy">
+              <label class="form-item__label form-item__label--radio" for="toy">Детская игрушка</label>
+            </fieldset>
+          </div>
 
+          <div class="wrapper wrapper--form">
+            <div class="container order-form__container">
               <fieldset class="form-item form-color">
                 <legend class="form-item__title">Цвет</legend>
                 <ul class="form-color__list">
-                  <li class="form-color__list-item">
+                  <li class="form-color__list-item form-color__list-item--top">
                     <input class="form-item__checkbox" type="checkbox" name="white" id="white" checked><label class="form-item__label form-item__label--checkbox" for="white">Белый</label>
                   </li>
                   <li class="form-color__list-item">
@@ -69,23 +90,29 @@
                   </li>
                 </ul>
               </fieldset>
+            </div>
+          </div>
 
-              <fieldset class="form-item form-name">
-                <legend class="form-item__title">Фио</legend>
-                <p class="form-name__item">
-                  <label class="form-item__label form-item__label--name" for="name">Имя:</label>
-                  <input class="form-item__text" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
-                </p>
-                <p class="form-name__item">
-                  <label class="form-item__label form-item__label--name" for="surname">Фамилия:</label>
-                  <input class="form-item__text" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
-                </p>
-                <p class="form-name__item">
-                  <label class="form-item__label form-item__label--name" for="patronymic">Отчество:</label>
-                  <input class="form-item__text" type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
-                </p>
-              </fieldset>
+          <div class="container">
+            <fieldset class="form-item form-name">
+              <legend class="form-item__title">Фио</legend>
+              <p class="form-name__item">
+                <label class="form-item__label form-item__label--name form-name__first" for="name">Имя:</label>
+                <input class="form-item__text" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
+              </p>
+              <p class="form-name__item">
+                <label class="form-item__label form-item__label--name" for="surname">Фамилия:</label>
+                <input class="form-item__text" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
+              </p>
+              <p class="form-name__item">
+                <label class="form-item__label form-item__label--name" for="patronymic">Отчество:</label>
+                <input class="form-item__text" type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
+              </p>
+            </fieldset>
+          </div>
 
+          <div class="wrapper wrapper--form">
+            <div class="container order-form__container">
               <fieldset class="form-item form-phone">
                 <legend class="form-item__title">Тел</legend>
                 <div class="form-phone__container">
@@ -93,28 +120,38 @@
                   <label for="tel" class="form-phone__icon"></label>
                 </div>
               </fieldset>
+            </div>
 
+            <div class="container order-form__container">
               <fieldset class="form-item form-email">
-                <legend class="form-item__title">E-mail</legend>
+                <legend class="form-item__title form-email__title">E-mail</legend>
                 <div class="form-email__container">
                   <input class="form-item__text form-email__text" type="email" name="email" id="email" placeholder="Ваш Email*" required>
                   <label for="email" class="form-email__icon"></label>
                 </div>
               </fieldset>
+            </div>
+          </div>
 
-              <fieldset class="form-item form-add">
-                <legend class="form-item__title">Доп</legend>
-                <textarea class="form-item__text form-item__textarea" type="textarea" name="add" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-              </fieldset>
-              <p class="order-form__footnote">*Поля обязательны для заполнения</p>
-              <button class="order-form__button button" type="submit">Отправить заказ</button>
-            </form>
-          </section>
-        </div>
-      </main>
+          <div class="container">
+            <fieldset class="form-item form-add">
+              <legend class="form-item__title">Доп</legend>
+              <textarea class="form-item__text form-item__textarea" name="add" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </fieldset>
+          </div>
+          <div class="container order-form__footer">
+            <p class="order-form__footnote">*Поля обязательны для заполнения</p>
+            <button class="order-form__button button" type="submit">Отправить заказ</button>
+          </div>
+        </form>
+      </section>
+    </main>
 
-      <footer class="page-footer">
-        <div class="container">
+    <div class="wrapper wrapper--grey">
+      <footer class="page-footer container">
+        <div class="page-footer__container">
+          <img class="page-footer__logo-image" src="img/content/logo-footer.svg" width="102" height="34" alt="Логотип 'Мишки'">
+
           <div class="page-footer__social social">
             <h2 class="visually-hidden">Мишка в соцсетях</h2>
             <ul class="social__list">

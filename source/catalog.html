@@ -7,29 +7,46 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    <div class="wrapper">
-      <header class="page-header">
+    <div class="wrapper wrapper--header-inner">
+      <header class="page-header page-header--inner container container--no-padding">
         <div class="page-header__top">
           <a class="page-header__logo" href="index.html">
             <img class="page-header__logo-image" src="img/content/logo-mobile.svg" width="86" height="35" alt="Логотип 'Мишки'">
           </a>
-          <button class="main-nav-toggle"><span class="visually-hidden">Открыть меню</span></button>
+          <button class="menu-toggle menu-toggle--no-js"><span class="visually-hidden">Открыть меню</span></button>
         </div>
 
         <nav class="main-nav">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог товаров</a></li>
-            <li class="site-list__item"><a class="site-list__link" href="form.html">Вязание на заказ</a></li>
-            <li class="site-list__item"><a class="site-list__link site-list__link-icon site-list__link-icon--search" href="">Поиск по сайту</a></li>
-            <li class="site-list__item"><a class="site-list__link site-list__link-icon site-list__link-icon--cart" href="">Корзина: пока пуста</a></li>
+            <li class="site-list__item site-list__item--page site-list__item--first">
+              <a class="site-list__link site-list__link--page" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="site-list__item site-list__item--page">
+              <a class="site-list__link site-list__link--page" href="form.html">Вязание на заказ</a>
+            </li>
+            <li class="site-list__item site-list__item--icon">
+              <a class="site-list__link site-list__link-icon site-list__link-icon--search" href="">Поиск по сайту</a>
+            </li>
+            <li class="site-list__item  site-list__item--icon site-list__item--last">
+              <a class="site-list__link site-list__link-icon site-list__link-icon--cart" href="">Корзина: пока пуста</a>
+            </li>
+            <li class="site-list__item--bottom">
+              <a class=" site-list__link--bottom" href="form.html">Новые поступления</a>
+            </li>
+            <li class="site-list__item--bottom">
+              <a class=" site-list__link--bottom" href="form.html">Распродажа</a>
+            </li>
           </ul>
+          <p class="main-nav__delivery">Бесплатная доставка по России</p>
         </nav>
 
         <div class="page-title">
           <h1 class="page-title__title title title--header">Каталог товаров</h1>
         </div>
       </header>
+    </div>
 
+    <div class="wrapper">
       <main class="page-content">
         <div class="container">
           <section class="goods">
@@ -82,9 +99,13 @@
           </section>
         </div>
       </main>
+    </div>
 
-      <footer class="page-footer page-footer--catalog">
-        <div class="container">
+    <div class="wrapper wrapper--grey">
+      <footer class="page-footer container">
+        <div class="page-footer__container">
+          <img class="page-footer__logo-image" src="img/content/logo-footer.svg" width="102" height="34" alt="Логотип 'Мишки'">
+
           <div class="page-footer__social social">
             <h2 class="visually-hidden">Мишка в соцсетях</h2>
             <ul class="social__list">

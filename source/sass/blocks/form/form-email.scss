@@ -1,6 +1,5 @@
 .form-email {
-  margin-top: 32px;
-  padding-top: 9px;
+  margin-top: 22px;
 }
 
 .form-email__container {
@@ -30,4 +29,24 @@
   height: 21px;
   background: url("../img/decor/form/icon-mail.svg") no-repeat center;
   opacity: 0.2;
+}
+
+@media (min-width: $tablet-width) {
+  .form-email {
+    margin-top: 0;
+    padding-top: 12px;
+  }
+
+  .form-email__title {
+    top: 43px;
+  }
+
+  .form-email__text {
+    background-color: transparent;
+    width: calc(100% - 32px);
+  }
+
+  .form-email__icon {
+    right: 32px;
+  }
 }

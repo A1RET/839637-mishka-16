@@ -1,0 +1,24 @@
+.order__description {
+  @include font(13px, 24px);
+  color: #444444;
+  margin: 0;
+  margin-top: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .order__description {
+    @include font(17px, 30px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order {
+    margin-bottom: 50px;
+  }
+
+  .order__description {
+    margin-top: 88px;
+    margin-right: $form-desktop-margin;
+    margin-left: $form-desktop-margin;
+  }
+}

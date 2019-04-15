@@ -11,3 +11,9 @@ body {
 a {
   text-decoration: none;
 }
+
+@media (min-width: $tablet-width) {
+  body {
+    font-size: 17px;
+  }
+}

@@ -5,3 +5,15 @@
 .title--header {
   font-size: 27px;
 }
+
+@media (min-width: $tablet-width) {
+  .title {
+    @include font(43px, 50px, bold);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .title {
+    @include font(53px, 57px, bold);
+  }
+}

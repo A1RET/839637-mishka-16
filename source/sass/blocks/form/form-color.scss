@@ -1,0 +1,52 @@
+.form-color__list {
+  @include list;
+  display: flex;
+  flex-direction: column;
+  margin-top: 21px;
+}
+
+.form-color__list-item {
+  margin-top: 31px;
+
+  &--top {
+    margin-top: 0;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .form-color__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    min-height: 204px;
+    margin-top: 0;
+  }
+
+  .form-color__list-item {
+    margin-top: 50px;
+    flex-basis: 50%;
+
+    &:nth-child(1) {
+      margin-top: 14px;
+    }
+
+    &:nth-child(2) {
+      margin-top: 14px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-color__list {
+    min-height: 128px;
+  }
+
+  .form-color__list-item {
+    flex-basis: 30%;
+
+    &:nth-child(3) {
+      margin-top: 14px;
+    }
+  }
+}

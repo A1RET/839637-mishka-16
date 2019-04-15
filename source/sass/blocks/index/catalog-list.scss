@@ -15,10 +15,11 @@
 
 .catalog-list__link {
   position: relative;
-  width: 106px;
+  width: 100%;
+  box-sizing: border-box;
   display: inline-block;
   color: #ffffff;
-  padding: 28px 185px 28px 30px;
+  padding: 28px 0 28px 30px;
 
   &--interior {
     background-color: #63d1bb;
@@ -58,5 +59,21 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-list {
+    @include font(20px, 30px, bold);
+    display: flex;
+    padding: 0 $container-padding;
+  }
+
+  .catalog-list__item {
+    flex-grow: 1;
+  }
+
+  .catalog-list__link {
+    padding: 30px 0 29px 35px;
   }
 }

@@ -74,3 +74,41 @@
     opacity: 0.3;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .product {
+    display: flex;
+  }
+
+  .product__description {
+    flex-grow: 1;
+  }
+
+  .product__title {
+    font-size: 20px;
+  }
+
+  .product__parameters {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product {
+    flex-direction: column;
+    width: 316px;
+  }
+
+  .product__description {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product__parameters {
+    margin-bottom: 12px;
+  }
+
+  .product__price {
+    margin-top: auto;
+  }
+}

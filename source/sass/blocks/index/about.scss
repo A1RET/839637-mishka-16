@@ -47,3 +47,36 @@
     background-image: url("../img/decor/features/icon-feature-gift.svg");
   }
 }
+
+@media (min-width: $tablet-width) {
+  .about__title {
+    margin-top: 57px;
+  }
+
+  .about__list {
+    @include font(20px, 22px, bold);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 462px;
+    align-items: stretch;
+  }
+
+  .about__item {
+    width: 295px;
+    margin-top: 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about__title {
+    margin-top: 68px;
+    margin-left: $index-left-margin;
+  }
+
+  .about__list {
+    margin-left: $index-left-margin;
+    margin-right: 230px;
+    align-items: flex-start;
+  }
+}

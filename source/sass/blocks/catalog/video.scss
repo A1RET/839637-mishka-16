@@ -3,6 +3,11 @@
   margin-left: -1px;
 }
 
+.video__cover {
+  display: block;
+  margin: 0 auto;
+}
+
 .video__play-button {
   position: absolute;
   top: 50%;
@@ -22,5 +27,19 @@
   &:active {
     transform: translate(-50%, -50%) scale(0.8);
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .video {
+    order: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video {
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 }
