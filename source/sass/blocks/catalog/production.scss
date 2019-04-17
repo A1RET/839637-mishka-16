@@ -1,5 +1,6 @@
 .production {
   margin-top: 30px;
+  margin-bottom: 57px;
   border: solid 1px #ececec;
 
   &:hover,
@@ -12,13 +13,13 @@
   @include font(17px, 24px, 700);
   position: relative;
   margin: 0;
-  padding: 26px 0 20px 91px;
+  padding: 23px 0 23px 89px;
   border-bottom: none;
 
   &::before {
     content: "";
     position: absolute;
-    top: 35px;
+    top: 33px;
     left: 34px;
     width: 32px;
     height: 22px;
@@ -28,12 +29,12 @@
 
 .production__text {
   @include font(13px, 24px);
-  margin: 29px 40px 0 34px;
+  margin: 27px 40px 0 34px;
 }
 
 .production__button {
   display: block;
-  width: 192px;
+  width: 188px;
   margin: 24px auto 33px;
 }
 
@@ -42,12 +43,13 @@
     display: flex;
     flex-direction: column;
     margin-top: 53px;
+    margin-bottom: 64px;
   }
 
   .production__title {
     order: 1;
     font-size: 20px;
-    padding: 41px 0 0 99px;
+    padding: 38px 0 0 105px;
 
     &::before {
       top: 40px;
@@ -59,12 +61,13 @@
     @include font(15px, 30px);
     order: 1;
     margin-top: 32px;
+    margin-left: 39px;
   }
 
   .production__button {
     order: 1;
     width: calc(100% - 84px);
-    margin: 33px auto 46px;
+    margin: 35px auto 45px;
   }
 }
 

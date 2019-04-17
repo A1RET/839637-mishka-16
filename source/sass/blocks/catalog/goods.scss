@@ -2,10 +2,24 @@
   @include list;
 }
 
+.goods__item {
+  margin-top: 29px;
+}
+
+@media (min-width: $tablet-width) {
+  .goods__list {
+    margin-top: 79px;
+  }
+
+  .goods__item {
+    margin-top: 54px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .goods__list {
     display: flex;
     justify-content: space-between;
-    margin-top: 98px;
+    margin-top: 80px;
   }
 }

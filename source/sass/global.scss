@@ -14,6 +14,6 @@ a {
 
 @media (min-width: $tablet-width) {
   body {
-    font-size: 17px;
+    @include font(17px, 30px);
   }
 }

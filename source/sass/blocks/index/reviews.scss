@@ -6,7 +6,7 @@
     width: 100%;
     height: 6px;
     position: absolute;
-    bottom: 0;
+    bottom: 5px;
     left: 0;
     background: url("../img/decor/bg-zigzag-line.svg") repeat-x;
     background-size: contain;
@@ -15,7 +15,7 @@
 
 .reviews__title {
   margin: 0;
-  margin-top: 56px;
+  margin-top: 54px;
 }
 
 .reviews__item {
@@ -24,7 +24,7 @@
 
 .reviews__text {
   margin: 0;
-  margin-top: 28px;
+  margin-top: 24px;
 }
 
 .reviews__author {
@@ -35,16 +35,17 @@
 
 .reviews__author-name {
   @include font(17px, 24px, 700);
-  margin-top: 30px;
+  margin-top: 27px;
 }
 
 .reviews__author-nickname {
   @include font(17px);
   font-style: normal;
+  margin-top: 3px;
 }
 
 .reviews__button {
-  margin: 38px 0 45px;
+  margin: 31px 0 50px;
 }
 
 @media (min-width: $tablet-width) {
@@ -52,10 +53,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 81px;
+    margin-top: 83px;
     padding-bottom: 84px;
     min-height: 547px;
-    background: url("../img/decor/review@1x.jpg") no-repeat 0 0;
+    background: url("../img/decor/review@1x.jpg") no-repeat 3px 0;
 
     &::after {
       height: 15px;
@@ -63,22 +64,30 @@
   }
 
   .reviews__title {
-    margin-top: 83px;
+    margin-top: 77px;
+    margin-left: -4px;
   }
 
   .reviews__item {
     order: 1;
+    margin-top: -26px;
+  }
+
+  .reviews__text {
+    margin-top: 24px;
   }
 
   .reviews__author-name {
-    margin-top: 68px;
+    font-size: 18px;
+    margin-top: 58px;
   }
 
   .reviews__button {
     order: 0;
     margin: 0;
-    align-self: flex-end;
-    width: 175px;
+    margin-top: 30px;
+    align-self: center;
+    width: 170px;
   }
 }
 
@@ -86,28 +95,37 @@
   .reviews {
     margin-top: 88px;
     padding-bottom: 90px;
-    background-position: $container-padding 0;
+    background-position: $container-padding--desktop 0;
 
     &::after {
       height: 23px;
-      left: $container-padding;
+      left: $container-padding--desktop;
+      bottom: 0;
       width: calc(100% - 104px);
     }
   }
 
   .reviews__title {
-    margin-left: $index-left-margin;
+    margin-top: 71px;
+    margin-left: $index-left-margin - 4px;
   }
 
   .reviews__item {
+    margin-top: -45px;
     margin-left: $index-left-margin;
   }
 
   .reviews__text {
+    margin-top: 0;
     margin-right: 100px;
   }
 
   .reviews__author-name {
-    margin-top: 50px;
+    font-size: 17px;
+    margin-top: 39px;
+  }
+
+  .reviews__button {
+    margin-top: -9px;
   }
 }

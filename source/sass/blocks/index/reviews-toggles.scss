@@ -1,6 +1,6 @@
 .reviews-toggles {
   margin: 0;
-  margin-top: 30px;
+  margin-top: 29px;
 }
 
 .reviews-toggles__toggle {
@@ -32,8 +32,8 @@
 @media (min-width: $tablet-width) {
   .reviews-toggles {
     position: absolute;
-    right: $container-padding;
-    bottom: 148px;
+    right: $container-padding--tablet - 18px;
+    bottom: 144px;
   }
 
   .reviews-toggles__toggle {
@@ -41,5 +41,12 @@
     width: 50px;
     height: 26px;
     margin-right: 37px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews-toggles {
+    right: $container-padding--desktop - 18px;
+    bottom: 192px;
   }
 }

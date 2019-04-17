@@ -6,25 +6,25 @@
 .contacts__title {
   @include font(18px, 30px, 700);
   margin: 0;
-  margin-top: 38px;
+  margin-top: 36px;
 }
 
 .contacts__info {
   display: table;
-  margin-top: 28px;
+  margin-top: 27px;
   color: #444444;
   border-collapse: collapse;
 }
 
 .contacts__item {
   display: table-row;
-  height: 46px;
+  height: 60px;
 }
 
 .contacts__text {
   display: table-cell;
   vertical-align: top;
-  width: 66px;
+  width: 76px;
 }
 
 .contacts__email {
@@ -45,7 +45,7 @@
 
 .contacts__map-image {
   display: block;
-  margin-top: 35px;
+  margin-top: 36px;
 }
 
 .contacts__button {
@@ -60,13 +60,14 @@
   .contacts__title {
     @include font(43px, 50px, 700);
     position: relative;
-    margin-top: 69px;
+    margin-top: 56px;
+    margin-left: -4px;
 
     &::after {
       content: "";
       position: absolute;
       top: -15px;
-      right: 0;
+      right: 2px;
       width: 47px;
       height: 81px;
       background: url("../img/decor/icon-flag.svg") no-repeat center;
@@ -75,6 +76,7 @@
 
   .contacts__info {
     display: flex;
+    margin-top: 32px;
   }
 
   .contacts__item {
@@ -90,6 +92,7 @@
 
   .contacts__email {
     margin-right: 32px;
+    line-height: 28px;
   }
 
   .contacts__map-image {
@@ -98,7 +101,7 @@
 
   .contacts__button {
     display: block;
-    width: 230px;
+    width: 226px;
     margin: 55px auto;
   }
 }
@@ -115,35 +118,36 @@
 
   .contacts__title {
     @include font(53px, 57px, 700);
-    margin-top: 150px;
-    margin-left: $index-left-margin;
+    margin-top: 143px;
+    margin-left: $index-left-margin - 4px;
 
     &::after {
-      left: -111px;
+      top: -9px;
+      left: -108px;
     }
   }
 
   .contacts__info {
     display: table;
     margin-left: $index-left-margin;
-    margin-top: 55px;
+    margin-top: 48px;
   }
 
   .contacts__item {
     display: table-row;
-    height: 46px;
+    height: 60px;
   }
 
   .contacts__text {
     display: table-cell;
-    width: 66px;
+    width: 76px;
   }
 
   .contacts__map-wrapper {
     position: absolute;
     top: 0;
     right: 0;
-    margin-right: $container-padding;
+    margin-right: $container-padding--desktop;
   }
 
   .contacts__map-image {

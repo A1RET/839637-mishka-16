@@ -14,6 +14,12 @@
     position: absolute;
     display: inline-block;
     bottom: 0;
-    right: $container-padding;
+    right: $container-padding--tablet;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__delivery {
+    right: $container-padding--desktop;
   }
 }
