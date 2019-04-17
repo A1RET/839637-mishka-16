@@ -1,3 +1,7 @@
+.order {
+  margin-bottom: 55px;
+}
+
 .order__description {
   @include font(13px, 24px);
   color: #444444;
@@ -6,18 +10,23 @@
 }
 
 @media (min-width: $tablet-width) {
+  .order {
+    margin-bottom: 49px;
+  }
+
   .order__description {
     @include font(17px, 30px);
+    margin-top: 72px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .order {
-    margin-bottom: 50px;
+    margin-bottom: 47px;
   }
 
   .order__description {
-    margin-top: 88px;
+    margin-top: 127px;
     margin-right: $form-desktop-margin;
     margin-left: $form-desktop-margin;
   }

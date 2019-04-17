@@ -38,7 +38,7 @@
   }
 
   .form-email__title {
-    top: 43px;
+    top: 30px;
   }
 
   .form-email__text {
@@ -47,6 +47,12 @@
   }
 
   .form-email__icon {
-    right: 32px;
+    right: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-email__icon {
+    right: 4px;
   }
 }

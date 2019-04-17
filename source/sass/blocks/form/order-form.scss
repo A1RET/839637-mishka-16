@@ -25,6 +25,7 @@
 
   .order-form__footnote {
     @include font(17px, 30px, 400);
+    align-self: flex-start;
   }
 
   .order-form__button {
@@ -34,6 +35,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .order-form__footer {
+    margin-top: 0;
+  }
+
   .order-form__footnote {
     margin-right: $form-desktop-margin;
   }
