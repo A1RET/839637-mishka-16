@@ -3,7 +3,9 @@
 }
 
 .goods__item {
-  margin-top: 29px;
+  display: block;
+  width: 260px;
+  margin: 29px auto 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -13,6 +15,7 @@
 
   .goods__item {
     margin-top: 54px;
+    width: auto;
   }
 }
 

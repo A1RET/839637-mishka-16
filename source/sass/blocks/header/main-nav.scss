@@ -10,6 +10,17 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-nav__list {
+    &::before {
+      content: "";
+      flex-grow: 1;
+      width: 48.295%;
+      height: 88px;
+      background-color: #ffffff;
+      border-bottom: 1px solid #ededed;
+    }
+  }
+
   .main-nav__delivery {
     position: absolute;
     display: inline-block;
@@ -19,6 +30,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-nav__list {
+    &::before {
+      display: none;
+    }
+  }
+
   .main-nav__delivery {
     right: $container-padding--desktop;
   }

@@ -1,6 +1,6 @@
 .production {
-  margin-top: 30px;
-  margin-bottom: 57px;
+  width: 260px;
+  margin: 30px auto 57px;
   border: solid 1px #ececec;
 
   &:hover,
@@ -42,6 +42,7 @@
   .production {
     display: flex;
     flex-direction: column;
+    width: auto;
     margin-top: 53px;
     margin-bottom: 64px;
   }

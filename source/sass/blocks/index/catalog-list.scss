@@ -19,7 +19,7 @@
   box-sizing: border-box;
   display: inline-block;
   color: #ffffff;
-  padding: 27px 0 28px 30px;
+  padding: 27px 0 28px $container-padding--mobile;
 
   &--interior {
     background-color: #63d1bb;
@@ -35,7 +35,7 @@
     width: 60px;
     height: 62px;
     top: 23px;
-    right: 27px;
+    right: 8.44vw;
     opacity: 0.5;
   }
 
@@ -78,6 +78,7 @@
 
     &::after {
       top: 30px;
+      right: 34px;
     }
 
     &--toys::after {

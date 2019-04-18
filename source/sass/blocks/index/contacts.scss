@@ -1,5 +1,5 @@
 .contacts__container {
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
 }
 
@@ -11,7 +11,7 @@
 
 .contacts__info {
   display: table;
-  margin-top: 27px;
+  margin: 27px auto 0;
   color: #444444;
   border-collapse: collapse;
 }
@@ -45,11 +45,12 @@
 
 .contacts__map-image {
   display: block;
-  margin-top: 36px;
+  margin: 36px auto 0;
 }
 
 .contacts__button {
-  margin-top: 38px;
+  display: block;
+  margin: 38px auto 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -96,11 +97,10 @@
   }
 
   .contacts__map-image {
-    margin-top: 40px;
+    margin: 40px auto 0;
   }
 
   .contacts__button {
-    display: block;
     width: 226px;
     margin: 55px auto;
   }

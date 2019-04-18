@@ -8,6 +8,14 @@
   @include list;
   @include font(17px, 20px, bold);
   margin-top: 32px;
+
+  @media (min-width: 615px) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 375px;
+    align-items: stretch;
+  }
 }
 
 .about__item {
@@ -65,11 +73,7 @@
 
   .about__list {
     @include font(20px, 22px, bold);
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     height: 462px;
-    align-items: stretch;
     margin-top: -5px;
   }
 

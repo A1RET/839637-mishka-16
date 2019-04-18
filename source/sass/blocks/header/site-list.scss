@@ -117,7 +117,6 @@
 
   .site-list__link-icon {
     &--search {
-      margin-left: 373px;
       padding: 44px 41px;
       font-size: 0;
       line-height: 0;
@@ -126,7 +125,7 @@
     }
 
     &--cart {
-      margin-right: 51px;
+      margin-right: $container-padding--tablet;
       padding-left: 82px;
       padding-top: 31px;
       padding-bottom: 23px;
@@ -182,7 +181,7 @@
     }
 
     &--search {
-      margin-left: 292px;
+      margin-left: 294px;
     }
   }
 }

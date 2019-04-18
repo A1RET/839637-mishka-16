@@ -1,5 +1,6 @@
 .reviews {
   position: relative;
+  padding-bottom: 56px;
 
   &::after {
     content: "";
@@ -45,7 +46,8 @@
 }
 
 .reviews__button {
-  margin: 31px 0 50px;
+  display: block;
+  margin: 31px auto 0;
 }
 
 @media (min-width: $tablet-width) {
