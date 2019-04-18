@@ -13,6 +13,10 @@
 @media (min-width: $tablet-width) {
   .order-form__container {
     background-color: #f1f1f1;
+
+    &--color {
+      padding-right: 30px;
+    }
   }
 
   .order-form__footer {
