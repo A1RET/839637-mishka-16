@@ -32,8 +32,8 @@
 @media (min-width: $tablet-width) {
   .reviews-toggles {
     position: absolute;
-    right: 34px;
-    bottom: 144px;
+    right: -18px;
+    bottom: 8px;
     width: auto;
   }
 
@@ -47,7 +47,7 @@
 
 @media (min-width: $desktop-width) {
   .reviews-toggles {
-    right: 32px;
-    bottom: 192px;
+    right: -18px;
+    bottom: 8px;
   }
 }

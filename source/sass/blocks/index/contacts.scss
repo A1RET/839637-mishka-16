@@ -6,7 +6,7 @@
 .contacts__title {
   @include font(18px, 30px, 700);
   margin: 0;
-  margin-top: 36px;
+  margin-top: 29px;
 }
 
 .contacts__info {
@@ -24,7 +24,10 @@
 .contacts__text {
   display: table-cell;
   vertical-align: top;
-  width: 76px;
+
+  &:first-child {
+    width: 77px;
+  }
 }
 
 .contacts__email {
@@ -89,6 +92,10 @@
     display: inline-block;
     width: auto;
     margin-right: 20px;
+
+    &:first-child {
+      width: auto;
+    }
   }
 
   .contacts__email {
@@ -140,7 +147,10 @@
 
   .contacts__text {
     display: table-cell;
-    width: 76px;
+
+    &:first-child {
+      width: 77px;
+    }
   }
 
   .contacts__map-wrapper {
