@@ -38,6 +38,7 @@
 @media (min-width: $tablet-width) {
   .form-phone {
     margin-top: 0;
+    padding-top: 55px;
     padding-bottom: 12px;
   }
 
@@ -48,5 +49,11 @@
 
   .form-phone__icon {
     right: 26px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-phone__icon {
+    right: 8px;
   }
 }

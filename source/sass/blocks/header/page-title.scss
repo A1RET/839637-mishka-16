@@ -1,10 +1,11 @@
 .page-title {
-  background-color: #f1f1f1;
   width: 100%;
+  background-color: #f1f1f1;
+  border-top: 1px solid #ededed;
 }
 
 .page-title__title {
-  margin: 75px 0 72px;
+  margin: 70px 0 75px;
   text-align: center;
 }
 
@@ -25,12 +26,13 @@
   }
 
   .page-title__title {
-    margin: 60px 0 74px;
+    margin: 53px 0 80px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-title__title {
-    margin-bottom: 96px;
+    margin-top: 52px;
+    margin-bottom: 97px;
   }
 }

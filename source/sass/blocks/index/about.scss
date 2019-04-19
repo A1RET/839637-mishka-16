@@ -1,23 +1,34 @@
 .about__title {
   margin: 0;
-  margin-top: 32px;
+  margin-top: 28px;
+  margin-left: -2px;
 }
 
 .about__list {
   @include list;
   @include font(17px, 20px, bold);
+  margin-top: 32px;
+
+  @media (min-width: 615px) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 375px;
+    align-items: stretch;
+  }
 }
 
 .about__item {
   position: relative;
-  margin-top: 30px;
+  width: 250px;
+  margin-top: 28px;
   padding-top: 55px;
 
   &::before {
     content: "";
     position: absolute;
     top: 0;
-    left: 0;
+    left: -4px;
     width: 55px;
     height: 37px;
     background: no-repeat center;
@@ -28,6 +39,7 @@
   }
 
   &--money::before {
+    top: -4px;
     background-image: url("../img/decor/features/icon-feature-money.svg");
   }
 
@@ -36,30 +48,33 @@
   }
 
   &--ball::before {
+    top: 2px;
+    left: -7px;
     background-image: url("../img/decor/features/icon-feature-ball.svg");
   }
 
   &--rocket::before {
+    top: -3px;
+    left: -5px;
     background-image: url("../img/decor/features/icon-feature-rocket.svg");
   }
 
   &--gift::before {
+    left: -8px;
     background-image: url("../img/decor/features/icon-feature-gift.svg");
   }
 }
 
 @media (min-width: $tablet-width) {
   .about__title {
-    margin-top: 57px;
+    margin-top: 51px;
+    margin-left: -3px;
   }
 
   .about__list {
     @include font(20px, 22px, bold);
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     height: 462px;
-    align-items: stretch;
+    margin-top: -5px;
   }
 
   .about__item {
@@ -70,13 +85,18 @@
 
 @media (min-width: $desktop-width) {
   .about__title {
-    margin-top: 68px;
-    margin-left: $index-left-margin;
+    margin-top: 60px;
+    margin-left: $index-left-margin - 4px;
   }
 
   .about__list {
     margin-left: $index-left-margin;
     margin-right: 230px;
     align-items: flex-start;
+  }
+
+  .about__item {
+    width: 350px;
+    margin-top: 54px;
   }
 }

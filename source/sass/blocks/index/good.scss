@@ -23,11 +23,12 @@
 
 .good__title {
   margin: 0;
-  margin-top: 32px;
+  margin-top: 28px;
 }
 
 .good__subtitle {
   @include font(17px, 20px, bold);
+  text-transform: uppercase;
   color: #63d1bb;
   margin: 0;
   margin-top: 5px;
@@ -36,7 +37,7 @@
 @media (min-width: $tablet-width) {
   .good {
     padding-bottom: 68px;
-    margin-top: 40px;
+    margin-top: 46px;
 
     &::after {
       height: 15px;
@@ -55,18 +56,21 @@
   }
 
   .good__subtitle {
+    line-height: 17px;
     width: 70px;
     text-align: center;
+    margin-top: 12px;
+    margin-right: 28px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .good {
     padding-bottom: 96px;
-    margin-top: 71px;
+    margin-top: 63px;
 
     &::after {
-      left: $container-padding;
+      left: $container-padding--desktop;
       width: calc(100% - 104px);
       height: 23px;
     }
@@ -81,6 +85,7 @@
   }
 
   .good__subtitle {
+    margin-top: 16px;
     margin-right: 54px;
   }
 

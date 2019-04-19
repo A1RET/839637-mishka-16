@@ -24,29 +24,34 @@
   }
 
   .form-color__list-item {
-    margin-top: 50px;
+    margin-top: 34px;
     flex-basis: 50%;
 
     &:nth-child(1) {
-      margin-top: 14px;
+      margin-top: 10px;
     }
 
     &:nth-child(2) {
-      margin-top: 14px;
+      margin-top: 10px;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
+  .form-color {
+    padding-right: 143px;
+  }
+
   .form-color__list {
     min-height: 128px;
+    justify-content: space-between;
   }
 
   .form-color__list-item {
     flex-basis: 30%;
 
     &:nth-child(3) {
-      margin-top: 14px;
+      margin-top: 10px;
     }
   }
 }

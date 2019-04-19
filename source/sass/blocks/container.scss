@@ -3,7 +3,6 @@
   box-sizing: border-box;
   margin: 0 auto;
   padding: 0 $container-padding--mobile;
-  //box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
 
   &--no-padding {
     padding: 0;
@@ -12,8 +11,8 @@
 
 @media (min-width: $tablet-width) {
   .container {
-    width: $tablet-width;
-    padding: 0 $container-padding;
+    min-width: $tablet-width;
+    padding: 0 $container-padding--tablet;
 
     &--no-padding {
       padding: 0;
@@ -24,5 +23,10 @@
 @media (min-width: $desktop-width) {
   .container {
     width: $desktop-width;
+    padding: 0 $container-padding--desktop;
+
+    &--no-padding {
+      padding: 0;
+    }
   }
 }
