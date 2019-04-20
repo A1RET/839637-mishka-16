@@ -35,6 +35,11 @@
   color: #000000;
 }
 
+.product__image {
+  width: 260px;
+  height: 195px;
+}
+
 .product__parameters {
   @include font(13px);
   color: #444444;
@@ -88,6 +93,11 @@
     margin-top: 25px;
   }
 
+  .product__image {
+    width: 334px;
+    height: 334px;
+  }
+
   .product__parameters {
     font-size: 15px;
   }
@@ -106,6 +116,11 @@
   .product {
     flex-direction: column;
     width: 316px;
+  }
+
+  .product__image {
+    width: 316px;
+    height: 462px;
   }
 
   .product__parameters {

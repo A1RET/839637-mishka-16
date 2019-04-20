@@ -21,6 +21,8 @@
 
 .good-description__image {
   display: block;
+  width: 260px;
+  height: 315px;
   margin: 28px auto 0;
 }
 
@@ -61,6 +63,8 @@
     position: absolute;
     top: 8px;
     right: 0;
+    width: 333px;
+    height: 404px;
     margin: 0;
   }
 
@@ -93,6 +97,8 @@
 
   .good-description__image {
     right: $container-padding--desktop;
+    width: 525px;
+    height: 636px;
   }
 
   .good-description__button {
