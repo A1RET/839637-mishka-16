@@ -5,6 +5,8 @@
 
 .video__cover {
   display: block;
+  width: 260px;
+  height: 150px;
   margin: 0 auto;
 }
 
@@ -34,6 +36,11 @@
   .video {
     order: 0;
   }
+
+  .video__cover {
+    width: 668px;
+    height: 455px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -41,5 +48,10 @@
     position: absolute;
     top: 0;
     left: 0;
+  }
+
+  .video__cover {
+    width: 682px;
+    height: 455px;
   }
 }

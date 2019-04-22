@@ -11,7 +11,11 @@
       <header class="page-header page-header--inner container container--no-padding">
         <div class="page-header__top">
           <a class="page-header__logo" href="index.html">
-            <img class="page-header__logo-image" src="img/content/logo-mobile.svg" width="86" height="35" alt="Логотип 'Мишки'">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/content/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/content/logo-tablet.svg">
+              <img class="page-header__logo-image" src="img/content/logo-mobile.svg" width="86" height="35" alt="Логотип 'Мишки'">
+            </picture>
           </a>
           <button class="menu-toggle menu-toggle--closed menu-toggle--no-js"><span class="visually-hidden">Открыть меню</span></button>
         </div>
@@ -30,11 +34,11 @@
             <li class="site-list__item  site-list__item--icon site-list__item--last">
               <a class="site-list__link site-list__link-icon site-list__link-icon--cart" href="">Корзина: пока пуста</a>
             </li>
-            <li class="site-list__item--bottom">
-              <a class=" site-list__link--bottom" href="form.html">Новые поступления</a>
+            <li class="site-list__item-bottom">
+              <a class="site-list__link-bottom" href="form.html">Новые поступления</a>
             </li>
-            <li class="site-list__item--bottom">
-              <a class=" site-list__link--bottom" href="form.html">Распродажа</a>
+            <li class="site-list__item-bottom">
+              <a class="site-list__link-bottom" href="form.html">Распродажа</a>
             </li>
           </ul>
           <p class="main-nav__delivery">Бесплатная доставка по России</p>
@@ -174,5 +178,6 @@
         </div>
       </footer>
     </div>
+    <script src="scripts/picturefill.min.js"></script>
   </body>
 </html>

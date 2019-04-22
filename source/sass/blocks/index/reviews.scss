@@ -23,6 +23,10 @@
   margin-top: 55px;
 }
 
+.reviews__list {
+  @include list;
+}
+
 .reviews__item {
   margin: 0;
 }
@@ -77,8 +81,11 @@
     margin-left: -4px;
   }
 
-  .reviews__item {
+  .reviews__list {
     order: 1;
+  }
+
+  .reviews__item {
     margin-top: 20px;
   }
 
