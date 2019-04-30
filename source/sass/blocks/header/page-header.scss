@@ -2,10 +2,10 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(#ffffff 88px, #ededed 88px, #ededed 89px, #f9f9f9 89px);
+  background-image: linear-gradient(#ffffff 79px, #ededed 79px, #ededed 80px, #f9f9f9 80px);
 
   &--inner {
-    background-image: linear-gradient(#ffffff 88px, #ededed 88px, #ededed 89px, #f1f1f1 89px);
+    background-image: linear-gradient(#ffffff 79px, #ededed 79px, #ededed 80px, #f1f1f1 80px);
   }
 }
 
@@ -25,6 +25,11 @@
   .page-header {
     flex-direction: row;
     flex-wrap: wrap;
+    background-image: linear-gradient(#ffffff 88px, #ededed 88px, #ededed 89px, #f9f9f9 89px);
+
+  &--inner {
+    background-image: linear-gradient(#ffffff 88px, #ededed 88px, #ededed 89px, #f1f1f1 89px);
+  }
   }
 
   .page-header__top {
