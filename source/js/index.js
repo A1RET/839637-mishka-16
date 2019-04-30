@@ -18,5 +18,3 @@ order.addEventListener("click", function (evt) {
 
 modalButton.addEventListener("click", closeModal);
 overlay.addEventListener("click", closeModal);
-
-
