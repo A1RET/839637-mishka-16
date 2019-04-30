@@ -1,6 +1,10 @@
 .main-nav {
   position: relative;
   width: 100%;
+
+  &--hide {
+    display: none;
+  }
 }
 
 .main-nav__delivery {
@@ -10,6 +14,9 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-nav {
+    display: block;
+  }
   .main-nav__list {
     &::before {
       content: "";
