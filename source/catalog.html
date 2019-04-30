@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/style-min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <link rel="preload" href="/fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
   </head>
   <body>
     <div class="wrapper wrapper--header-inner">
@@ -170,6 +172,24 @@
         </div>
       </footer>
     </div>
+
+    <div class="overlay"></div>
+    <section class="modal">
+      <h2 class="modal__title title">Добавить в корзину</h2>
+      <p class="modal__text">Выберите размер:</p>
+      <p class="modal__options">
+        <input class="modal__radio" type="radio" name="size" id="size-s" value="s" checked>
+        <label class="modal__size" for="size-s">S</label>
+        <input class="modal__radio" type="radio" name="size" id="size-m" value="m">
+        <label class="modal__size" for="size-m">M</label>
+        <input class="modal__radio" type="radio" name="size" id="size-l" value="l">
+        <label class="modal__size" for="size-l">L</label>
+      </p>
+      <a class="modal__button button" href="">Добавить</a>
+    </section>
+
+    <script src="js/menu.min.js"></script>
+    <script src="js/catalog.min.js"></script>
     <script src="js/picturefill.min.js"></script>
   </body>
 </html>
