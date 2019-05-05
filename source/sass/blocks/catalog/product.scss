@@ -113,6 +113,11 @@
   .product {
     flex-direction: column;
     width: 316px;
+    margin-left: 50px;
+
+    &:first-child {
+      margin-left: 0;
+    }
   }
 
   .product__image {
