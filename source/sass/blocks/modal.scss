@@ -21,8 +21,12 @@
 .modal__title {
   text-transform: uppercase;
   width: 150px;
-  margin: 34px auto 0;
+  margin: 31px auto 0;
   text-align: center;
+}
+
+.modal__text {
+  margin-top: 11px;
 }
 
 .modal__radio {
@@ -35,18 +39,18 @@
 
 .modal__options {
   margin: 0;
-  margin-top: 20px;
+  margin-top: 23px;
 }
 
 .modal__size {
   @include font(17px, 16px, bold);
   display: inline-block;
-  padding: 18px 35px;
+  padding: 16px 35px;
   border: solid 2px rgba(#444444, 0.1);
   cursor: pointer;
 
   &:nth-of-type(2) {
-    padding: 18px 32px;
+    padding: 16px 32px;
   }
 
   &:hover,
@@ -72,11 +76,15 @@
     width: 100%;
   }
 
+  .modal__text {
+    margin-top: 11px;
+  }
+
   .modal__size {
-    padding: 18px 50px;
+    padding: 16px 50px;
 
     &:nth-of-type(2) {
-      padding: 18px 47px;
+      padding: 16px 47px;
     }
   }
 
