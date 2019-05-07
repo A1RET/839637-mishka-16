@@ -114,8 +114,9 @@
     flex-direction: column;
     width: 316px;
     margin-left: 50px;
+    margin-right: 0;
 
-    &:first-child {
+    &:nth-child(3n + 1) {
       margin-left: 0;
     }
   }

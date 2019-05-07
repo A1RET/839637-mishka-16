@@ -22,7 +22,8 @@
 @media (min-width: $desktop-width) {
   .goods__list {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     margin-top: 80px;
   }
 }
