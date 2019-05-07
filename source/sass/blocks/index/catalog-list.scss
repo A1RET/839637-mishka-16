@@ -47,6 +47,11 @@
     background: url("../img/decor/icon-toy.svg") no-repeat center;
   }
 
+  &:hover,
+  &:focus {
+    transform: translateY(-5px)
+  }
+
   &--interior:hover,
   &--interior:focus {
     background-color: #59d5bc;
