@@ -27,6 +27,14 @@
   @include list;
 }
 
+.reviews__list-item {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
 .reviews__item {
   margin: 0;
 }
