@@ -14,6 +14,17 @@
   background-color: #ffffff;
 }
 
+.page-header__logo {
+  &:hover .page-header__logo-image,
+  &:focus .page-header__logo-image {
+    opacity: 0.6;
+  }
+
+  &:active .page-header__logo-image {
+    opacity: 0.3;
+  }
+}
+
 .page-header__logo-image {
   display: block;
   margin: 22px auto;
