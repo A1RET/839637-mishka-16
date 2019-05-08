@@ -12,6 +12,7 @@
 @media (min-width: $tablet-width) {
   .page-title {
     position: relative;
+    border-top: none;
   }
 
   .page-title__title {
