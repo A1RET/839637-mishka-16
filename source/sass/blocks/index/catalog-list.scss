@@ -4,6 +4,11 @@
 }
 
 .catalog-list__item {
+  &:hover {
+    margin-top: -5px;
+    padding-bottom: 5px;
+  }
+
   &--interior {
     background-color: #59d5bc;
   }
@@ -47,10 +52,10 @@
     background: url("../img/decor/icon-toy.svg") no-repeat center;
   }
 
-  &:hover,
+  /*&:hover,
   &:focus {
-    transform: translateY(-5px);
-  }
+    padding-bottom: 33px;
+  }*/
 
   &--interior:hover,
   &--interior:focus {
