@@ -45,14 +45,6 @@
     background-image: url("../img/decor/menu/icon-cart-hover.svg");
     opacity: 1;
   }
-
-  &-icon--search:active::before {
-    opacity: 0.3;
-  }
-
-  &-icon--cart:active::before {
-    opacity: 0.3;
-  }
 }
 
 .site-list__link-icon {
