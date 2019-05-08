@@ -44,6 +44,15 @@
 
   .page-footer__logo-image {
     display: block;
+
+    &:hover,
+    &:focus {
+      fill: #46c1ae;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .page-footer__social {
