@@ -4,23 +4,28 @@
   justify-content: center;
 }
 
-.copyright__text {
-  @include font(19px, 18px, bold);
-  margin-right: 30px;
-}
-
 .copyright__link {
-  display: inline-block;
-  width: 27px;
-  height: 34px;
-  background: url("../img/decor/logo/logo-htmlacademy.svg") no-repeat center;
+  @include font(19px, 18px, bold);
+  position: relative;
+  color: #000000;
+  padding-right: 57px;
 
-  &:hover,
-  &:focus {
-    background-image: url("../img/decor/logo/logo-htmlacademy-hover.svg");
+  &::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: 0;
+    width: 27px;
+    height: 34px;
+    background: url("../img/decor/logo/logo-htmlacademy.svg") no-repeat center;
   }
 
   &:active {
     opacity: 0.3;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    background-image: url("../img/decor/logo/logo-htmlacademy-hover.svg");
   }
 }
