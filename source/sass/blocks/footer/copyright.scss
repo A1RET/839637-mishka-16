@@ -8,14 +8,14 @@
   @include font(19px, 18px, bold);
   position: relative;
   color: #000000;
-  padding-right: 57px;
+  padding-right: 56px;
 
   &::after {
     content: "";
     position: absolute;
     top: -5px;
-    right: 0;
-    width: 27px;
+    right: 1px;
+    width: 28px;
     height: 34px;
     background: url("../img/decor/logo/logo-htmlacademy.svg") no-repeat center;
   }
