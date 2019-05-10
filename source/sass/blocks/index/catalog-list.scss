@@ -4,17 +4,25 @@
 }
 
 .catalog-list__item {
-  &:hover {
-    margin-top: -5px;
-    padding-bottom: 5px;
-  }
-
   &--interior {
-    background-color: #59d5bc;
+    background-color: #63d1bb;
+
+    &:hover {
+      background-color: #59d5bc;
+    }
   }
 
   &--toys {
-    background-color: #46c1ae;
+    background-color: #56c3b2;
+
+    &:hover {
+      background-color: #46c1ae;
+    }
+  }
+
+  &:hover {
+    margin-top: -5px;
+    padding-bottom: 5px;
   }
 }
 
